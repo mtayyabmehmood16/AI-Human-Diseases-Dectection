@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1><i class="fas fa-chart-line text-primary"></i> {{ _('Admin Dashboard') }}</h1>
+        <span class="badge bg-success">{{ _('System Active') }}</span>
+    </div>
+
+    <!-- Key Metrics Cards -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card text-white bg-primary mb-3 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">{{ _('Total Patients') }}</h5>
+                    <p class="card-text display-4">{{ stats.total_patients }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-success mb-3 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">{{ _('Total Users') }}</h5>
+                    <p class="card-text display-4">{{ stats.total_users }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-info mb-3 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">{{ _('Recent Activity') }}</h5>
+                    <p class="card-text fs-4">{{ stats.recent_patients|length }} New Patients</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charts Section -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-header bg-white">
+                    <h5 class="mb-0">Top Detected Diseases</h5>
+                </div>
+                <div class="card-body">
+                    <canvas id="diseaseChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-header bg-white">
+                    <h5 class="mb-0">Patient Demographics (Age)</h5>
+                </div>
+                <div class="card-body">
+                    <canvas id="ageChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent List -->
+    <div class="row mt-4 mb-5">
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-header bg-white">
+                    <h5 class="mb-0">Recent Registrations</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    {% for p in stats.recent_patients %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>{{ p.name }}</strong>
+                            <small class="text-muted ms-2">ID: {{ p.id }}</small>
+                        </div>
+                        <span class="badge bg-secondary rounded-pill">{{ p.age }} y/o</span>
+                    </li>
+                    {% else %}
+                    <li class="list-group-item">No recent patients.</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script id="data-diseases" type="application/json">
+    {{ chart_data.diseases | tojson }}
+</script>
+<script id="data-ages" type="application/json">
+    {{ chart_data.ages | tojson }}
+</script>
+<script>
+    // Data parsed from JSON blocks
+    const diseaseData = JSON.parse(document.getElementById('data-diseases').textContent);
+    const ageData = JSON.parse(document.getElementById('data-ages').textContent);
+
+    // 1. Disease Chart (Doughnut)
+    new Chart(document.getElementById('diseaseChart'), {
+        type: 'doughnut',
+        data: {
+            labels: diseaseData.labels,
+            datasets: [{
+                data: diseaseData.data,
+                backgroundColor: [
+                    '#4e73df', '#1cc88a', '#36b9cc', '#f6c23e', '#e74a3b'
+                ],
+                hoverOffset: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { position: 'bottom' }
+            }
+        }
+    });
+
+    // 2. Age Chart (Bar)
+    new Chart(document.getElementById('ageChart'), {
+        type: 'bar',
+        data: {
+            labels: ageData.labels,
+            datasets: [{
+                label: 'Number of Patients',
+                data: ageData.data,
+                backgroundColor: '#36b9cc',
+                borderRadius: 5
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: { beginAtZero: true, ticks: { stepSize: 1 } }
+            },
+            plugins: {
+                legend: { display: false }
+            }
+        }
+    });
+</script>
+{% endblock %}

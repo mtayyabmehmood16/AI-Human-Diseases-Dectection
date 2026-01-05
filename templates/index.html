@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block title %}Home - MediMind{% endblock %}
+
+{% block content %}
+<div class="hero-section">
+    <div class="hero-content">
+        <h1 class="display-4 animated-hero-title">Welcome to AI Human Disease Detection</h1>
+        <p class="lead animated-hero-text">The Future of Intelligent Care</p>
+        <div class="hero-icons">
+            <i class="fas fa-stethoscope animated-icon"></i>
+            <i class="fas fa-user-md animated-icon"></i>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-lg-8 mx-auto">
+        <div class="text-center mb-5">
+            <h2 class="animated-welcome">Discover Potential Disease Matches</h2>
+            <p class="lead">Enter your symptoms or search for diseases to get potential matches based on our dataset.
+                This tool uses AI to analyze symptoms and provide informational results.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-sm animated-card">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0"><i class="fas fa-search"></i> Symptom Matching</h5>
+                    </div>
+                    <div class="card-body">
+                        <form method="post" action="{{ url_for('main.match') }}">
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+                            <div class="mb-3">
+                                <label for="symptoms" class="form-label">Describe your symptoms:</label>
+                                <textarea class="form-control" id="symptoms" name="symptoms" rows="4"
+                                    placeholder="e.g., headache, fever, cough" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100"><i class="fas fa-search"></i> Find
+                                Matches</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm animated-card">
+                    <div class="card-header bg-secondary text-white">
+                        <h5 class="mb-0"><i class="fas fa-book"></i> Disease Lookup</h5>
+                    </div>
+                    <div class="card-body">
+                        <form method="post" action="{{ url_for('main.find') }}">
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+                            <div class="mb-3">
+                                <label for="dname" class="form-label">Disease name:</label>
+                                <input type="text" class="form-control" id="dname" name="dname" placeholder="e.g., flu"
+                                    required>
+                            </div>
+                            <button type="submit" class="btn btn-secondary w-100"><i class="fas fa-search"></i> Search
+                                Diseases</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm animated-card">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="mb-0"><i class="fas fa-users"></i> Patient Management</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <p>Manage patients in the system.</p>
+                        {% if current_user.is_authenticated and current_user.role in ['admin', 'staff'] %}
+                        <a href="{{ url_for('patients.add_patient') }}" class="btn btn-success w-100 mb-2"><i
+                                class="fas fa-plus"></i> Add New Patient</a>
+                        <a href="{{ url_for('patients.view_patients') }}" class="btn btn-info w-100 mb-2"><i
+                                class="fas fa-list"></i> View All Patients</a>
+                        <a href="{{ url_for('patients.search_patients') }}" class="btn btn-outline-success w-100"><i
+                                class="fas fa-search"></i> Search Patients</a>
+                        {% else %}
+                        <p class="text-muted">Login as staff or admin to access patient management.</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <form method="post" action="{{ url_for('main.reload') }}" class="d-inline">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+                <input type="hidden" name="reload_path" value="{{ loaded or 'data/diseases.csv' }}">
+                <button type="submit" class="btn btn-outline-primary"><i class="fas fa-sync"></i> Reload
+                    Dataset</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

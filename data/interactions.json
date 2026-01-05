@@ -1,0 +1,47 @@
+{
+    "aspirin": [
+        "warfarin",
+        "heparin",
+        "ibuprofen",
+        "naproxen"
+    ],
+    "warfarin": [
+        "aspirin",
+        "ibuprofen",
+        "acetaminophen",
+        "garlic"
+    ],
+    "ibuprofen": [
+        "aspirin",
+        "warfarin",
+        "lithium"
+    ],
+    "acetaminophen": [
+        "warfarin",
+        "alcohol"
+    ],
+    "lisinopril": [
+        "potassium",
+        "lithium"
+    ],
+    "simvastatin": [
+        "grapefruit",
+        "erythromycin"
+    ],
+    "metformin": [
+        "contrast dye",
+        "alcohol"
+    ],
+    "amoxicillin": [
+        "methotrexate",
+        "birth control"
+    ],
+    "ciprofloxacin": [
+        "theophylline",
+        "antacids"
+    ],
+    "fluoxetine": [
+        "tramadol",
+        "st john's wort"
+    ]
+}

@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block title %}Add New Patient - Disease Matcher{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="fas fa-user-plus"></i> Add New Patient</h5>
+            </div>
+            <div class="card-body">
+                <form method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name *</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="age" class="form-label">Age *</label>
+                        <input type="number" class="form-control" id="age" name="age" min="1" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <textarea class="form-control" id="address" name="address" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="disease" class="form-label">Disease (optional)</label>
+                        <input type="text" class="form-control" id="disease" name="disease" placeholder="e.g., Flu, Cold">
+                    </div>
+                    <div class="mb-3">
+                        <label for="image" class="form-label">Photo</label>
+                        <input type="file" class="form-control" id="image" name="image" accept="image/*" capture="environment">
+                        <div class="mt-2">
+                            <button type="button" class="btn btn-outline-secondary" id="capture-btn"><i class="fas fa-camera"></i> Capture from Camera</button>
+                            <small class="text-muted d-block mt-1">Allow camera permission when prompted to capture photo.</small>
+                        </div>
+                        <video id="video" width="320" height="240" autoplay style="display:none;"></video>
+                        <canvas id="canvas" style="display:none;"></canvas>
+                    </div>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Add Patient</button>
+                    <a href="{{ url_for('main.index') }}" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.getElementById('capture-btn').addEventListener('click', async () => {
+    const video = document.getElementById('video');
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    try {
+        const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        video.srcObject = stream;
+        video.style.display = 'block';
+
+        // Wait for video to load
+        video.onloadedmetadata = () => {
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+        };
+
+        // Capture on click again or add a capture button
+        document.getElementById('capture-btn').textContent = 'Capture';
+        document.getElementById('capture-btn').onclick = () => {
+            ctx.drawImage(video, 0, 0);
+            canvas.toBlob((blob) => {
+                const file = new File([blob], 'captured.jpg', { type: 'image/jpeg' });
+                const dataTransfer = new DataTransfer();
+                dataTransfer.items.add(file);
+                document.getElementById('image').files = dataTransfer.files;
+                video.style.display = 'none';
+                stream.getTracks().forEach(track => track.stop());
+                document.getElementById('capture-btn').textContent = 'Capture from Camera';
+                document.getElementById('capture-btn').onclick = () => { /* reset */ };
+            });
+        };
+    } catch (err) {
+        alert('Camera access denied or not available. Please upload an image file instead.');
+        console.error(err);
+    }
+});
+</script>
+{% endblock %}

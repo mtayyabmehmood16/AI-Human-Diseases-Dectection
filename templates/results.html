@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}Symptom Matching Results - AI Human Disease Detection{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-10 mx-auto">
+        <h3>Symptom Matching Results for: "{{ query }}"</h3>
+        <p class="text-muted">Diseases that match your symptoms.</p>
+
+        {% if gemini_response %}
+        <div class="card mb-4 shadow-sm animated-card">
+            <div class="card-header bg-success text-white animated-header">
+                <h5 class="mb-0"><i class="fas fa-robot"></i> AI-Generated Recommendations from Gemini</h5>
+            </div>
+            <div class="card-body animated-body">
+                <div class="animated-text" id="gemini-content" style="display:none;">{{ gemini_response }}</div>
+                <div id="gemini-content-rendered"></div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var md = window.markdownit();
+                var rawContent = document.getElementById('gemini-content').textContent;
+                var rendered = md.render(rawContent);
+                document.getElementById('gemini-content-rendered').innerHTML = rendered;
+            });
+        </script>
+        {% endif %}
+
+        {% if results %}
+        {% for disease, score, tips, matched_keywords in results %}
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header bg-info text-white">
+                <h5 class="mb-0">{{ disease }}</h5>
+                <small class="text-light">Match Score: {{ "%.2f"|format(score) }}</small>
+            </div>
+            <div class="card-body">
+                {% if matched_keywords %}
+                <div class="mb-3">
+                    <strong>Matched Keywords:</strong>
+                    <p class="mb-0">{{ matched_keywords | join(', ') }}</p>
+                </div>
+                {% endif %}
+                {% if tips %}
+                <div>
+                    <strong>Health Tips:</strong>
+                    <p class="mb-0">{{ tips }}</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+        {% else %}
+        <div class="alert alert-warning">
+            <i class="fas fa-exclamation-triangle"></i> No diseases found matching "{{ query }}".
+        </div>
+        {% endif %}
+
+        <div class="text-center">
+            <a href="{{ url_for('main.index') }}" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to
+                Home</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

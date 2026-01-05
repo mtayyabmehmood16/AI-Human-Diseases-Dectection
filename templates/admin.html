@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Panel{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="animated-welcome">Admin Panel</h2>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Staff Users</h3>
+            <ul class="list-group animated-card">
+                {% for username, user in users.items() %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        {{ username }} (ID: {{ user.id }})
+                        {% if username != 'admin' %}
+                            <form method="POST" action="{{ url_for('admin.delete_user', username=username) }}" style="display: inline;">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                            </form>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+            <h3>Patient Users</h3>
+            <ul class="list-group animated-card">
+                {% for patient in patients %}
+                    <li class="list-group-item">
+                        <strong>{{ patient.username }}</strong> (Name: {{ patient.name }}, Age: {{ patient.age }})
+                        <span class="badge bg-primary">Patient</span>
+                        {% if patient.get('appointments') %}
+                            <div class="mt-2">
+                                <small class="text-muted"><strong>Appointments:</strong></small>
+                                <ul class="mb-0">
+                                    {% for appt in patient.appointments %}
+                                        <li class="small">{{ appt.date }} at {{ appt.time }} - {{ appt.purpose }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

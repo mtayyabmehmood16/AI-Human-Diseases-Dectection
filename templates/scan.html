@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block title %}AI Face Scan{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <h2 class="mb-4">Scan Patient Face</h2>
+
+            <div class="card shadow">
+                <div class="card-body">
+                    <!-- Video Preview -->
+                    <div class="mb-3 position-relative">
+                        <video id="video" width="100%" height="auto" autoplay playsinline
+                            class="rounded border bg-black"></video>
+                        <canvas id="canvas" style="display:none;"></canvas>
+                        <div id="loadingOverlay"
+                            class="position-absolute w-100 h-100 d-none justify-content-center align-items-center"
+                            style="top:0; left:0; background: rgba(0,0,0,0.5);">
+                            <div class="spinner-border text-light" role="status">
+                                <span class="visually-hidden">Scanning...</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-info" id="statusMsg">
+                        Camera loading...
+                    </div>
+
+                    <button id="snap" class="btn btn-primary btn-lg w-100" disabled>
+                        <i class="fas fa-camera"></i> Scan Face
+                    </button>
+
+                    <form id="scanForm" method="POST" enctype="multipart/form-data"
+                        action="{{ url_for('patients.scan_face') }}" style="display:none;">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                        <input type="hidden" name="image_data" id="image_data">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const video = document.getElementById('video');
+    const canvas = document.getElementById('canvas');
+    const snapBtn = document.getElementById('snap');
+    const statusMsg = document.getElementById('statusMsg');
+    const imageDataInput = document.getElementById('image_data');
+    const form = document.getElementById('scanForm');
+    const loadingOverlay = document.getElementById('loadingOverlay');
+
+    // Access webcam
+    navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function (stream) {
+            video.srcObject = stream;
+            video.play();
+            snapBtn.disabled = false;
+            statusMsg.textContent = "Align face centrally and click Scan.";
+            statusMsg.classList.remove('alert-info');
+            statusMsg.classList.add('alert-primary');
+        })
+        .catch(function (err) {
+            console.log("An error occurred: " + err);
+            statusMsg.textContent = "Error accessing camera: " + err.message;
+            statusMsg.classList.remove('alert-info');
+            statusMsg.classList.add('alert-danger');
+        });
+
+    snapBtn.addEventListener('click', function () {
+        // Show loading
+        loadingOverlay.classList.remove('d-none');
+        loadingOverlay.classList.add('d-flex');
+        snapBtn.disabled = true;
+        statusMsg.textContent = "Analyzing...";
+
+        // Capture frame
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        const context = canvas.getContext('2d');
+        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+        // Convert to data URL
+        const dataURL = canvas.toDataURL('image/jpeg');
+        imageDataInput.value = dataURL;
+
+        // Submit
+        form.submit();
+    });
+</script>
+{% endblock %}

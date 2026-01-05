@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{% block title %}AI Skin Assistant - Disease Matcher{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <div class="card shadow-lg">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="fas fa-hand-holding-medical"></i> AI Skin Assistant</h5>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-warning">
+                    <i class="fas fa-exclamation-circle"></i> <strong>Disclaimer:</strong> This tool uses AI to analyze
+                    skin images. It is <strong>NOT</strong> a medical diagnosis. Always consult a dermatologist.
+                </div>
+
+                <!-- Input Section -->
+                <div class="row mb-4">
+                    <div class="col-md-6 border-end">
+                        <h6>Option 1: Upload Photo</h6>
+                        <form method="post" enctype="multipart/form-data" id="upload-form">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                            <div class="mb-3">
+                                <input class="form-control" type="file" id="image" name="image" accept="image/*">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100"><i class="fas fa-upload"></i> Analyze
+                                Upload</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Option 2: Use Camera</h6>
+                        <div class="mb-2">
+                            <video id="video" width="100%" height="auto" autoplay style="display:none;"
+                                class="rounded border"></video>
+                            <canvas id="canvas" style="display:none;"></canvas>
+                        </div>
+                        <button id="start-cam" class="btn btn-outline-primary w-100 mb-2"><i class="fas fa-camera"></i>
+                            Start Camera</button>
+                        <button id="capture-btn" class="btn btn-success w-100 mb-2" style="display:none;"><i
+                                class="fas fa-dot-circle"></i> Capture & Analyze</button>
+
+                        <form method="post" id="camera-form" style="display:none;">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                            <input type="hidden" name="image_data" id="image_data">
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Results Section -->
+                {% if result %}
+                <hr>
+                <div class="mt-4 animated-text">
+                    <h4 class="text-primary"><i class="fas fa-user-md"></i> Analysis Result</h4>
+                    <!-- Show scanned image if available (optional) -->
+
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <div id="ai-result" style="display:none;">{{ result }}</div>
+                            <div id="ai-result-rendered"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Markdown Render Script -->
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        var md = window.markdownit();
+                        var raw = document.getElementById('ai-result').textContent;
+                        var rendered = md.render(raw);
+                        document.getElementById('ai-result-rendered').innerHTML = rendered;
+                    });
+                </script>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const video = document.getElementById('video');
+    const canvas = document.getElementById('canvas');
+    const startBtn = document.getElementById('start-cam');
+    const captureBtn = document.getElementById('capture-btn');
+    const imageDataInput = document.getElementById('image_data');
+    const cameraForm = document.getElementById('camera-form');
+
+    startBtn.addEventListener('click', async () => {
+        try {
+            const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+            video.srcObject = stream;
+            video.style.display = 'block';
+            startBtn.style.display = 'none';
+            captureBtn.style.display = 'block';
+        } catch (err) {
+            alert("Error accessing camera: " + err);
+        }
+    });
+
+    captureBtn.addEventListener('click', () => {
+        // Draw frame
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        canvas.getContext('2d').drawImage(video, 0, 0);
+
+        // Convert to base64
+        const dataURL = canvas.toDataURL('image/jpeg');
+        imageDataInput.value = dataURL;
+
+        // Submit
+        cameraForm.submit();
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Disease Lookup - AI Human Disease Detection{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-header bg-success text-white">
+                    <h4 class="mb-0"><i class="fas fa-book"></i> Disease Lookup</h4>
+                </div>
+                <div class="card-body">
+                    <p class="text-muted">Search for detailed information about specific diseases including symptoms,
+                        causes, treatment, and prevention.</p>
+
+                    <form method="post" action="{{ url_for('main.find') }}">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+                        <div class="mb-3">
+                            <label for="dname" class="form-label">Disease Name:</label>
+                            <input type="text" class="form-control" id="dname" name="dname"
+                                placeholder="e.g., diabetes, hypertension, asthma..." required>
+                            <div class="form-text">Enter a disease name or partial name for search results.</div>
+                        </div>
+                        <button type="submit" class="btn btn-success"><i class="fas fa-search"></i> Search
+                            Disease</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card shadow-sm mt-4">
+                <div class="card-header bg-warning text-dark">
+                    <h5 class="mb-0"><i class="fas fa-lightbulb"></i> Search Tips</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="mb-0">
+                        <li>Use common names (e.g., "heart attack" instead of "myocardial infarction")</li>
+                        <li>Partial names work too (e.g., "diabet" for diabetes)</li>
+                        <li>The search is case-insensitive and finds approximate matches</li>
+                        <li>Results include AI-generated information for better understanding</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

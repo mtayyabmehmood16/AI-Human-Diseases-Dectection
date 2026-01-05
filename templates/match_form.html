@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Symptom Checker - AI Human Disease Detection{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0"><i class="fas fa-search"></i> Symptom Checker</h4>
+                </div>
+                <div class="card-body">
+                    <p class="text-muted">Enter your symptoms to find possible matching diseases. Our AI-powered system
+                        will analyze your symptoms and provide potential matches with health recommendations.</p>
+
+                    <form method="post" action="{{ url_for('main.match') }}">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+                        <div class="mb-3">
+                            <label for="symptoms" class="form-label">Symptoms:</label>
+                            <textarea class="form-control" id="symptoms" name="symptoms" rows="4"
+                                placeholder="e.g., fever, headache, cough, fatigue..." required></textarea>
+                            <div class="form-text">Describe your symptoms in detail. Separate multiple symptoms with
+                                commas.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Check
+                            Symptoms</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card shadow-sm mt-4">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0"><i class="fas fa-info-circle"></i> How It Works</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="mb-0">
+                        <li>Enter symptoms as they appear (e.g., "chest pain, shortness of breath")</li>
+                        <li>The system searches our disease database for matches</li>
+                        <li>Results are ranked by similarity score</li>
+                        <li>AI provides additional health insights and recommendations</li>
+                        <li><strong>Important:</strong> This is not a substitute for professional medical advice</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card shadow-sm mt-4">
+                <div class="card-header bg-warning text-dark">
+                    <h5 class="mb-0"><i class="fas fa-exclamation-triangle"></i> Important Disclaimer</h5>
+                </div>
+                <div class="card-body">
+                    <p class="mb-0">This symptom checker is for informational purposes only and should not replace
+                        professional medical advice, diagnosis, or treatment. Always seek the advice of your physician
+                        or other qualified health provider with any questions you may have regarding a medical
+                        condition.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,1418 @@
+[2025-12-15 14:21:45,253] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-15 14:21:45,253] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-15 14:21:46,779] INFO [app.create_app:98] Application initialized successfully
+[2025-12-15 14:24:51,645] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-15 14:24:51,646] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-15 14:24:53,514] INFO [app.create_app:98] Application initialized successfully
+[2025-12-15 14:24:53,550] INFO [werkzeug._log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.128.81.38:5000
+[2025-12-15 14:24:53,550] INFO [werkzeug._log:97] [33mPress CTRL+C to quit[0m
+[2025-12-15 14:24:53,554] INFO [werkzeug._log:97]  * Restarting with stat
+[2025-12-15 14:24:54,376] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-15 14:24:54,377] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-15 14:24:56,319] INFO [app.create_app:98] Application initialized successfully
+[2025-12-15 14:24:56,328] WARNING [werkzeug._log:97]  * Debugger is active!
+[2025-12-15 14:24:56,331] INFO [werkzeug._log:97]  * Debugger PIN: 128-301-784
+[2025-12-15 14:25:00,321] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 14:25:00] "GET / HTTP/1.1" 200 -
+[2025-12-15 14:25:00,361] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 14:25:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 14:25:00,405] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 14:25:00] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-15 14:28:22,079] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 14:28:22] "GET / HTTP/1.1" 200 -
+[2025-12-15 14:28:22,112] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 14:28:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 14:28:22,129] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 14:28:22] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-15 14:50:21,370] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 14:50:21] "GET / HTTP/1.1" 200 -
+[2025-12-15 14:50:21,440] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 14:50:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 14:50:21,538] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 14:50:21] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-15 15:03:20,504] INFO [werkzeug._log:97]  * Detected change in 'D:\\AI human\\human-20251124T190931Z-1-001\\human\\app.py', reloading
+[2025-12-15 15:03:21,542] INFO [werkzeug._log:97]  * Restarting with stat
+[2025-12-15 15:03:22,835] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-15 15:03:22,835] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-15 15:03:25,492] INFO [app.create_app:99] Application initialized successfully
+[2025-12-15 15:03:25,506] WARNING [werkzeug._log:97]  * Debugger is active!
+[2025-12-15 15:03:25,509] INFO [werkzeug._log:97]  * Debugger PIN: 128-301-784
+[2025-12-15 15:03:46,062] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:03:46] "GET /login HTTP/1.1" 200 -
+[2025-12-15 15:03:46,087] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:03:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 15:03:46,120] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:03:46] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-15 15:03:48,478] INFO [flask_wtf.csrf.protect:263] The CSRF token is missing.
+[2025-12-15 15:03:48,480] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:03:48] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+[2025-12-15 15:04:07,180] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:04:07] "GET /login HTTP/1.1" 200 -
+[2025-12-15 15:04:07,213] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:04:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 15:04:09,882] INFO [flask_wtf.csrf.protect:263] The CSRF token is missing.
+[2025-12-15 15:04:09,883] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:04:09] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+[2025-12-15 15:06:05,460] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:06:05] "GET / HTTP/1.1" 200 -
+[2025-12-15 15:06:05,479] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:06:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 15:06:05,701] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:06:05] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-15 15:07:54,339] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:07:54] "GET /login HTTP/1.1" 200 -
+[2025-12-15 15:07:54,366] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:07:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 15:07:54,405] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:07:54] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-15 15:07:58,477] INFO [flask_wtf.csrf.protect:263] The CSRF token is missing.
+[2025-12-15 15:07:58,479] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:07:58] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+[2025-12-15 15:08:01,670] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:08:01] "GET /login HTTP/1.1" 200 -
+[2025-12-15 15:08:03,664] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:08:03] "GET /login HTTP/1.1" 200 -
+[2025-12-15 15:08:03,698] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:08:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 15:08:04,895] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:08:04] "GET /login HTTP/1.1" 200 -
+[2025-12-15 15:08:04,927] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:08:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 15:08:06,621] INFO [flask_wtf.csrf.protect:263] The CSRF token is missing.
+[2025-12-15 15:08:06,623] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:08:06] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+[2025-12-15 15:08:22,976] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-15 15:08:22,976] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-15 15:08:24,961] INFO [app.create_app:99] Application initialized successfully
+[2025-12-15 15:08:26,348] INFO [werkzeug._log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.15.0.18:5000
+[2025-12-15 15:08:26,349] INFO [werkzeug._log:97] [33mPress CTRL+C to quit[0m
+[2025-12-15 15:08:26,356] INFO [werkzeug._log:97]  * Restarting with stat
+[2025-12-15 15:08:27,202] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-15 15:08:27,202] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-15 15:08:28,966] INFO [app.create_app:99] Application initialized successfully
+[2025-12-15 15:08:28,976] WARNING [werkzeug._log:97]  * Debugger is active!
+[2025-12-15 15:08:28,980] INFO [werkzeug._log:97]  * Debugger PIN: 128-301-784
+[2025-12-15 15:08:42,743] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:08:42] "GET / HTTP/1.1" 200 -
+[2025-12-15 15:08:42,760] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:08:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 15:08:42,784] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:08:42] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-15 15:08:46,265] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:08:46] "GET /login HTTP/1.1" 200 -
+[2025-12-15 15:08:46,283] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:08:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 15:08:48,535] INFO [flask_wtf.csrf.protect:263] The CSRF token is missing.
+[2025-12-15 15:08:48,538] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:08:48] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+[2025-12-15 15:09:36,309] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:09:36] "GET /register HTTP/1.1" 200 -
+[2025-12-15 15:09:36,340] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:09:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 15:10:15,979] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:10:15] "GET /register HTTP/1.1" 200 -
+[2025-12-15 15:10:16,007] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:10:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 15:10:18,194] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:10:18] "GET /register HTTP/1.1" 200 -
+[2025-12-15 15:10:18,225] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:10:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 15:10:26,278] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:10:26] "GET / HTTP/1.1" 200 -
+[2025-12-15 15:10:26,301] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:10:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 15:10:26,375] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:10:26] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-15 15:10:29,868] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:10:29] "GET /login HTTP/1.1" 200 -
+[2025-12-15 15:10:29,892] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:10:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 15:10:31,837] INFO [flask_wtf.csrf.protect:263] The CSRF token is missing.
+[2025-12-15 15:10:31,839] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:10:31] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+[2025-12-15 15:12:16,624] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:12:16] "GET /login HTTP/1.1" 200 -
+[2025-12-15 15:12:16,662] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:12:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 15:13:05,425] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-15 15:13:05,426] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-15 15:13:07,514] INFO [app.create_app:99] Application initialized successfully
+[2025-12-15 15:13:08,030] INFO [werkzeug._log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.15.0.18:5000
+[2025-12-15 15:13:08,030] INFO [werkzeug._log:97] [33mPress CTRL+C to quit[0m
+[2025-12-15 15:13:08,037] INFO [werkzeug._log:97]  * Restarting with stat
+[2025-12-15 15:13:08,966] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-15 15:13:08,967] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-15 15:13:11,009] INFO [app.create_app:99] Application initialized successfully
+[2025-12-15 15:13:11,018] WARNING [werkzeug._log:97]  * Debugger is active!
+[2025-12-15 15:13:11,022] INFO [werkzeug._log:97]  * Debugger PIN: 128-301-784
+[2025-12-15 15:13:33,057] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:13:33] "GET / HTTP/1.1" 200 -
+[2025-12-15 15:13:33,082] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:13:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 15:13:33,114] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:13:33] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-15 15:13:33,197] WARNING [app.not_found_error:75] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-15 15:13:33,208] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:13:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-12-15 15:13:36,292] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:13:36] "GET /monitor HTTP/1.1" 200 -
+[2025-12-15 15:13:36,322] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:13:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 15:15:01,456] WARNING [app.not_found_error:75] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-15 15:15:01,464] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:15:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-12-15 15:15:15,719] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:15:15] "GET /skin HTTP/1.1" 200 -
+[2025-12-15 15:15:15,768] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:15:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 15:15:25,960] INFO [flask_wtf.csrf.protect:263] The CSRF token is missing.
+[2025-12-15 15:15:25,963] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:15:25] "[31m[1mPOST /skin HTTP/1.1[0m" 400 -
+[2025-12-15 15:15:40,844] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:15:40] "GET /login HTTP/1.1" 200 -
+[2025-12-15 15:15:40,876] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:15:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 15:18:53,114] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:18:53] "GET /register HTTP/1.1" 200 -
+[2025-12-15 15:18:53,153] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:18:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 15:18:55,336] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:18:55] "GET /login HTTP/1.1" 200 -
+[2025-12-15 15:18:55,368] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:18:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 15:18:57,682] INFO [flask_wtf.csrf.protect:263] The CSRF token is missing.
+[2025-12-15 15:18:57,686] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 15:18:57] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+[2025-12-15 16:23:22,023] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:23:22] "GET /login HTTP/1.1" 200 -
+[2025-12-15 16:23:22,046] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:23:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 16:23:22,080] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:23:22] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-15 16:23:24,208] INFO [flask_wtf.csrf.protect:263] The CSRF token is missing.
+[2025-12-15 16:23:24,214] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:23:24] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+[2025-12-15 16:25:41,622] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:25:41] "GET /login HTTP/1.1" 200 -
+[2025-12-15 16:25:44,100] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:25:44] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+[2025-12-15 16:25:44,122] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:25:44] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2025-12-15 16:25:44,128] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:25:44] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2025-12-15 16:25:44,175] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:25:44] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=6Eox3azXqE6D6IMLpjaZ HTTP/1.1" 200 -
+[2025-12-15 16:25:44,253] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:25:44] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2025-12-15 16:26:19,717] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:26:19] "GET /login HTTP/1.1" 200 -
+[2025-12-15 16:26:22,807] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:26:22] "GET /skin HTTP/1.1" 200 -
+[2025-12-15 16:26:22,829] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:26:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 16:27:05,373] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:27:05] "POST /skin HTTP/1.1" 200 -
+[2025-12-15 16:27:23,109] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:27:23] "POST /skin HTTP/1.1" 200 -
+[2025-12-15 16:27:23,167] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:27:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 16:28:10,657] INFO [werkzeug._log:97]  * Detected change in 'D:\\AI human\\human-20251124T190931Z-1-001\\human\\config.py', reloading
+[2025-12-15 16:28:13,218] INFO [werkzeug._log:97]  * Restarting with stat
+[2025-12-15 16:28:13,979] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-15 16:28:13,979] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-15 16:28:15,774] INFO [app.create_app:99] Application initialized successfully
+[2025-12-15 16:28:15,782] WARNING [werkzeug._log:97]  * Debugger is active!
+[2025-12-15 16:28:15,785] INFO [werkzeug._log:97]  * Debugger PIN: 128-301-784
+[2025-12-15 16:30:00,808] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:30:00] "GET /monitor HTTP/1.1" 200 -
+[2025-12-15 16:30:00,910] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:30:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 16:31:16,314] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:31:16] "GET /login HTTP/1.1" 200 -
+[2025-12-15 16:31:16,374] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:31:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 16:31:18,523] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:31:18] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2025-12-15 16:31:18,560] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:31:18] "GET / HTTP/1.1" 200 -
+[2025-12-15 16:31:18,582] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:31:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 16:31:36,201] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:31:36] "GET /view_patients HTTP/1.1" 200 -
+[2025-12-15 16:31:36,218] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:31:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 16:31:36,220] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:31:36] "[36mGET /static/uploads/6ea208d1-0d64-4693-ad4a-aee177f7b20b_WIN_20251211_00_34_57_Pro.jpg HTTP/1.1[0m" 304 -
+[2025-12-15 16:31:36,225] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:31:36] "[36mGET /static/uploads/7adb9fee-a554-48b4-906c-856e3a4bedc7_captured.jpg HTTP/1.1[0m" 304 -
+[2025-12-15 16:31:41,533] INFO [flask_wtf.csrf.protect:263] The CSRF token is missing.
+[2025-12-15 16:31:41,534] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:31:41] "[31m[1mPOST /bulk_delete_patients HTTP/1.1[0m" 400 -
+[2025-12-15 16:34:57,478] INFO [flask_wtf.csrf.protect:263] The CSRF token is missing.
+[2025-12-15 16:34:57,479] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:34:57] "[31m[1mPOST /bulk_delete_patients HTTP/1.1[0m" 400 -
+[2025-12-15 16:35:02,094] INFO [flask_wtf.csrf.protect:263] The CSRF token is missing.
+[2025-12-15 16:35:02,095] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:02] "[31m[1mPOST /bulk_delete_patients HTTP/1.1[0m" 400 -
+[2025-12-15 16:35:07,208] INFO [flask_wtf.csrf.protect:263] The CSRF token is missing.
+[2025-12-15 16:35:07,211] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:07] "[31m[1mPOST /bulk_delete_patients HTTP/1.1[0m" 400 -
+[2025-12-15 16:35:13,213] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:13] "GET / HTTP/1.1" 200 -
+[2025-12-15 16:35:13,251] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 16:35:17,095] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:17] "GET /view_patients HTTP/1.1" 200 -
+[2025-12-15 16:35:17,108] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 16:35:17,116] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:17] "[36mGET /static/uploads/6ea208d1-0d64-4693-ad4a-aee177f7b20b_WIN_20251211_00_34_57_Pro.jpg HTTP/1.1[0m" 304 -
+[2025-12-15 16:35:17,120] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:17] "[36mGET /static/uploads/7adb9fee-a554-48b4-906c-856e3a4bedc7_captured.jpg HTTP/1.1[0m" 304 -
+[2025-12-15 16:35:22,969] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:22] "[32mPOST /bulk_delete_patients HTTP/1.1[0m" 302 -
+[2025-12-15 16:35:22,993] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:22] "GET / HTTP/1.1" 200 -
+[2025-12-15 16:35:23,028] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 16:35:32,858] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:32] "[32mPOST /reload HTTP/1.1[0m" 302 -
+[2025-12-15 16:35:32,873] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:32] "GET / HTTP/1.1" 200 -
+[2025-12-15 16:35:32,894] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 16:35:41,353] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:41] "[32mGET /logout HTTP/1.1[0m" 302 -
+[2025-12-15 16:35:41,368] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:41] "GET /login HTTP/1.1" 200 -
+[2025-12-15 16:35:41,388] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 16:35:53,770] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:53] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2025-12-15 16:35:53,786] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:53] "GET / HTTP/1.1" 200 -
+[2025-12-15 16:35:53,812] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 16:35:58,042] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:58] "GET /view_patients HTTP/1.1" 200 -
+[2025-12-15 16:35:58,060] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 16:35:58,065] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:58] "[36mGET /static/uploads/6ea208d1-0d64-4693-ad4a-aee177f7b20b_WIN_20251211_00_34_57_Pro.jpg HTTP/1.1[0m" 304 -
+[2025-12-15 16:35:58,075] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:35:58] "[36mGET /static/uploads/7adb9fee-a554-48b4-906c-856e3a4bedc7_captured.jpg HTTP/1.1[0m" 304 -
+[2025-12-15 16:36:02,003] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:36:02] "[32mPOST /bulk_delete_patients HTTP/1.1[0m" 302 -
+[2025-12-15 16:36:02,045] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:36:02] "GET /view_patients HTTP/1.1" 200 -
+[2025-12-15 16:36:02,086] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:36:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 16:36:02,095] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:36:02] "[36mGET /static/uploads/6ea208d1-0d64-4693-ad4a-aee177f7b20b_WIN_20251211_00_34_57_Pro.jpg HTTP/1.1[0m" 304 -
+[2025-12-15 16:36:02,108] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:36:02] "[36mGET /static/uploads/7adb9fee-a554-48b4-906c-856e3a4bedc7_captured.jpg HTTP/1.1[0m" 304 -
+[2025-12-15 16:38:36,534] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:38:36] "GET /chat.html HTTP/1.1" 200 -
+[2025-12-15 16:38:36,564] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:38:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 16:39:08,355] INFO [flask_wtf.csrf.protect:263] The CSRF token is missing.
+[2025-12-15 16:39:08,359] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:39:08] "[31m[1mPOST /chat HTTP/1.1[0m" 400 -
+[2025-12-15 16:39:46,252] INFO [flask_wtf.csrf.protect:263] The CSRF token is missing.
+[2025-12-15 16:39:46,258] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:39:46] "[31m[1mPOST /chat HTTP/1.1[0m" 400 -
+[2025-12-15 16:42:33,204] INFO [flask_wtf.csrf.protect:263] The CSRF token is missing.
+[2025-12-15 16:42:33,207] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:42:33] "[31m[1mPOST /chat HTTP/1.1[0m" 400 -
+[2025-12-15 16:42:37,655] INFO [flask_wtf.csrf.protect:263] The CSRF token is missing.
+[2025-12-15 16:42:37,658] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:42:37] "[31m[1mPOST /chat HTTP/1.1[0m" 400 -
+[2025-12-15 16:43:28,679] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:43:28] "GET /chat.html HTTP/1.1" 200 -
+[2025-12-15 16:43:28,716] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:43:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 16:43:45,250] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 16:43:45] "POST /chat HTTP/1.1" 200 -
+[2025-12-15 20:12:55,373] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-15 20:12:55,373] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-15 20:12:59,237] INFO [app.create_app:99] Application initialized successfully
+[2025-12-15 20:12:59,265] INFO [werkzeug._log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.128.80.212:5000
+[2025-12-15 20:12:59,265] INFO [werkzeug._log:97] [33mPress CTRL+C to quit[0m
+[2025-12-15 20:12:59,271] INFO [werkzeug._log:97]  * Restarting with stat
+[2025-12-15 20:13:00,321] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-15 20:13:00,321] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-15 20:13:02,167] INFO [app.create_app:99] Application initialized successfully
+[2025-12-15 20:13:02,174] WARNING [werkzeug._log:97]  * Debugger is active!
+[2025-12-15 20:13:02,178] INFO [werkzeug._log:97]  * Debugger PIN: 128-301-784
+[2025-12-15 20:13:47,621] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:13:47] "GET / HTTP/1.1" 200 -
+[2025-12-15 20:13:47,786] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:13:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 20:13:47,836] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:13:47] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-15 20:13:48,066] WARNING [app.not_found_error:75] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-15 20:13:48,071] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:13:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-12-15 20:20:34,318] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:20:34] "GET /monitor HTTP/1.1" 200 -
+[2025-12-15 20:20:34,348] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:20:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 20:20:34,380] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:20:34] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-15 20:27:38,141] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:27:38] "GET /monitor HTTP/1.1" 200 -
+[2025-12-15 20:27:38,205] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:27:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 20:27:38,315] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:27:38] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-15 20:29:00,254] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:29:00] "GET /monitor HTTP/1.1" 200 -
+[2025-12-15 20:29:00,294] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:29:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 20:29:00,378] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:29:00] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-15 20:34:06,685] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:34:06] "GET / HTTP/1.1" 200 -
+[2025-12-15 20:34:08,411] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:34:08] "GET / HTTP/1.1" 200 -
+[2025-12-15 20:34:08,429] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:34:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 20:34:10,030] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:34:10] "GET /monitor HTTP/1.1" 200 -
+[2025-12-15 20:34:10,049] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:34:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 20:38:04,627] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:38:04] "GET /monitor HTTP/1.1" 200 -
+[2025-12-15 20:38:04,684] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:38:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 20:39:16,643] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:39:16] "GET /monitor HTTP/1.1" 200 -
+[2025-12-15 20:39:16,718] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:39:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 20:42:46,984] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:42:46] "GET / HTTP/1.1" 200 -
+[2025-12-15 20:42:47,007] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:42:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 20:42:47,044] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:42:47] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-15 20:42:48,664] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:42:48] "GET /monitor HTTP/1.1" 200 -
+[2025-12-15 20:42:48,690] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:42:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 20:50:16,626] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:50:16] "GET / HTTP/1.1" 200 -
+[2025-12-15 20:50:16,645] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:50:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 20:50:16,681] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:50:16] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-15 20:50:18,055] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:50:18] "GET /monitor HTTP/1.1" 200 -
+[2025-12-15 20:50:18,078] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:50:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 20:50:26,544] INFO [werkzeug._log:97]  * Detected change in 'D:\\AI human\\human-20251124T190931Z-1-001\\human\\src\\blueprints\\admin.py', reloading
+[2025-12-15 20:50:37,200] INFO [werkzeug._log:97]  * Restarting with stat
+[2025-12-15 20:50:48,332] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-15 20:50:48,343] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-15 20:51:12,147] INFO [app.create_app:99] Application initialized successfully
+[2025-12-15 20:51:12,273] WARNING [werkzeug._log:97]  * Debugger is active!
+[2025-12-15 20:51:12,289] INFO [werkzeug._log:97]  * Debugger PIN: 128-301-784
+[2025-12-15 20:54:45,912] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:54:45] "GET /monitor HTTP/1.1" 200 -
+[2025-12-15 20:54:45,967] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:54:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 20:56:34,812] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:56:34] "GET /skin HTTP/1.1" 200 -
+[2025-12-15 20:56:34,838] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:56:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 20:57:06,119] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:57:06] "POST /skin HTTP/1.1" 200 -
+[2025-12-15 20:57:06,174] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:57:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 20:57:10,238] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 20:57:10] "POST /skin HTTP/1.1" 200 -
+[2025-12-15 21:00:48,340] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:00:48] "POST /skin HTTP/1.1" 200 -
+[2025-12-15 21:01:12,347] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:01:12] "POST /skin HTTP/1.1" 200 -
+[2025-12-15 21:01:12,444] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:01:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 21:28:55,849] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:28:55] "GET /skin HTTP/1.1" 200 -
+[2025-12-15 21:29:12,375] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:29:12] "GET / HTTP/1.1" 200 -
+[2025-12-15 21:29:39,364] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:29:39] "GET /login HTTP/1.1" 200 -
+[2025-12-15 21:29:39,393] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:29:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 21:29:41,939] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:29:41] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2025-12-15 21:29:41,990] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:29:41] "GET / HTTP/1.1" 200 -
+[2025-12-15 21:29:42,026] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:29:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 21:37:59,238] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:37:59] "GET /view_patients HTTP/1.1" 200 -
+[2025-12-15 21:37:59,269] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:37:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 21:37:59,274] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:37:59] "[36mGET /static/uploads/6ea208d1-0d64-4693-ad4a-aee177f7b20b_WIN_20251211_00_34_57_Pro.jpg HTTP/1.1[0m" 304 -
+[2025-12-15 21:37:59,279] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:37:59] "[36mGET /static/uploads/7adb9fee-a554-48b4-906c-856e3a4bedc7_captured.jpg HTTP/1.1[0m" 304 -
+[2025-12-15 21:37:59,304] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:37:59] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-15 21:38:26,841] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:38:26] "GET /export_patients_csv HTTP/1.1" 200 -
+[2025-12-15 21:39:56,264] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:39:56] "GET /profile HTTP/1.1" 200 -
+[2025-12-15 21:39:56,296] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:39:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 21:51:10,465] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:51:10] "[32mGET /logout HTTP/1.1[0m" 302 -
+[2025-12-15 21:51:10,495] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:51:10] "GET /login HTTP/1.1" 200 -
+[2025-12-15 21:51:10,542] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:51:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 21:51:10,580] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:51:10] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-15 21:51:15,068] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:51:15] "GET /register HTTP/1.1" 200 -
+[2025-12-15 21:51:15,094] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:51:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 21:54:01,512] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:54:01] "[32mPOST /register HTTP/1.1[0m" 302 -
+[2025-12-15 21:54:01,548] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:54:01] "GET /login HTTP/1.1" 200 -
+[2025-12-15 21:54:01,599] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:54:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 21:54:08,529] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:54:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2025-12-15 21:54:08,551] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:54:08] "GET / HTTP/1.1" 200 -
+[2025-12-15 21:54:08,579] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:54:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 21:54:20,751] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:54:20] "[32mGET /logout HTTP/1.1[0m" 302 -
+[2025-12-15 21:54:20,774] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:54:20] "GET /login HTTP/1.1" 200 -
+[2025-12-15 21:54:20,799] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:54:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 21:54:25,701] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:54:25] "GET /login HTTP/1.1" 200 -
+[2025-12-15 21:54:25,730] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:54:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 21:54:50,118] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:54:50] "POST /login HTTP/1.1" 200 -
+[2025-12-15 21:54:50,150] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:54:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 21:55:00,617] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:55:00] "POST /login HTTP/1.1" 200 -
+[2025-12-15 21:55:00,640] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:55:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 21:55:12,293] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:55:12] "POST /login HTTP/1.1" 200 -
+[2025-12-15 21:55:12,316] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:55:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 21:55:59,766] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:55:59] "POST /login HTTP/1.1" 200 -
+[2025-12-15 21:55:59,779] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:55:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 21:56:04,445] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:56:04] "GET / HTTP/1.1" 200 -
+[2025-12-15 21:56:04,473] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:56:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 21:56:25,540] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:56:25] "POST /find HTTP/1.1" 200 -
+[2025-12-15 21:56:25,555] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 21:56:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 22:06:31,072] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:06:31] "GET /login HTTP/1.1" 200 -
+[2025-12-15 22:06:31,105] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:06:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 22:06:57,218] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:06:57] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2025-12-15 22:06:57,252] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:06:57] "GET / HTTP/1.1" 200 -
+[2025-12-15 22:06:57,283] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:06:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 22:07:13,372] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:07:13] "GET /view_patients HTTP/1.1" 200 -
+[2025-12-15 22:07:13,404] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:07:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 22:07:13,406] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:07:13] "[36mGET /static/uploads/6ea208d1-0d64-4693-ad4a-aee177f7b20b_WIN_20251211_00_34_57_Pro.jpg HTTP/1.1[0m" 304 -
+[2025-12-15 22:07:13,414] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:07:13] "[36mGET /static/uploads/7adb9fee-a554-48b4-906c-856e3a4bedc7_captured.jpg HTTP/1.1[0m" 304 -
+[2025-12-15 22:07:13,418] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:07:13] "GET /static/uploads/ccbe7341-fda1-4047-9793-eb2983886827_WhatsApp_Image_2025-12-15_at_20.58.01_3febda1e.jpg HTTP/1.1" 200 -
+[2025-12-15 22:22:46,555] INFO [werkzeug._log:97]  * Detected change in 'd:\\AI human\\human-20251124T190931Z-1-001\\human\\config.py', reloading
+[2025-12-15 22:22:49,957] INFO [werkzeug._log:97]  * Restarting with stat
+[2025-12-15 22:39:05,635] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-15 22:39:05,636] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-15 22:39:08,395] INFO [app.create_app:111] Application initialized successfully
+[2025-12-15 22:39:08,461] INFO [werkzeug._log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.128.80.212:5000
+[2025-12-15 22:39:08,462] INFO [werkzeug._log:97] [33mPress CTRL+C to quit[0m
+[2025-12-15 22:39:08,519] INFO [werkzeug._log:97]  * Restarting with stat
+[2025-12-15 22:39:09,470] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-15 22:39:09,471] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-15 22:39:11,440] INFO [app.create_app:111] Application initialized successfully
+[2025-12-15 22:39:11,449] WARNING [werkzeug._log:97]  * Debugger is active!
+[2025-12-15 22:39:11,451] INFO [werkzeug._log:97]  * Debugger PIN: 128-301-784
+[2025-12-15 22:39:17,473] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:39:17] "GET / HTTP/1.1" 200 -
+[2025-12-15 22:39:17,495] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:39:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 22:39:17,529] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:39:17] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-15 22:39:30,434] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:39:30] "GET /?lang=es HTTP/1.1" 200 -
+[2025-12-15 22:39:30,461] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:39:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 22:39:36,477] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:39:36] "GET /?lang=en HTTP/1.1" 200 -
+[2025-12-15 22:39:36,504] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:39:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 22:39:38,700] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:39:38] "GET /?lang=es HTTP/1.1" 200 -
+[2025-12-15 22:39:38,722] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:39:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 22:39:41,404] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:39:41] "GET /?lang=es HTTP/1.1" 200 -
+[2025-12-15 22:39:41,451] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:39:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 22:39:43,653] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:39:43] "GET /chat.html HTTP/1.1" 200 -
+[2025-12-15 22:39:43,674] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:39:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 22:41:29,106] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:41:29] "POST /chat HTTP/1.1" 200 -
+[2025-12-15 22:41:47,753] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:41:47] "GET /?lang=es HTTP/1.1" 200 -
+[2025-12-15 22:41:47,781] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:41:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 22:48:06,283] INFO [werkzeug._log:97]  * Detected change in 'D:\\AI human\\human-20251124T190931Z-1-001\\human\\config.py', reloading
+[2025-12-15 22:48:09,009] INFO [werkzeug._log:97]  * Restarting with stat
+[2025-12-15 22:48:10,283] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-15 22:48:10,284] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-15 22:48:12,395] INFO [app.create_app:111] Application initialized successfully
+[2025-12-15 22:48:12,408] WARNING [werkzeug._log:97]  * Debugger is active!
+[2025-12-15 22:48:12,412] INFO [werkzeug._log:97]  * Debugger PIN: 128-301-784
+[2025-12-15 22:51:06,883] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:51:06] "GET /?lang=es HTTP/1.1" 200 -
+[2025-12-15 22:51:06,912] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:51:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 22:51:06,945] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:51:06] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-15 22:51:11,824] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:51:11] "GET /?lang=ar HTTP/1.1" 200 -
+[2025-12-15 22:51:11,848] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:51:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 22:52:53,801] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:52:53] "GET /?lang=ur HTTP/1.1" 200 -
+[2025-12-15 22:52:53,829] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:52:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 22:54:55,311] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:54:55] "GET /monitor HTTP/1.1" 200 -
+[2025-12-15 22:54:55,334] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:54:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 22:54:58,680] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:54:58] "GET /chat.html HTTP/1.1" 200 -
+[2025-12-15 22:54:58,715] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:54:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-15 22:55:19,343] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:55:19] "POST /chat HTTP/1.1" 200 -
+[2025-12-15 22:55:43,923] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:55:43] "POST /chat HTTP/1.1" 200 -
+[2025-12-15 22:56:01,762] INFO [werkzeug._log:97] 127.0.0.1 - - [15/Dec/2025 22:56:01] "POST /chat HTTP/1.1" 200 -
+[2025-12-16 02:14:34,635] INFO [werkzeug._log:97] 127.0.0.1 - - [16/Dec/2025 02:14:34] "GET /?lang=en HTTP/1.1" 200 -
+[2025-12-16 02:14:34,670] INFO [werkzeug._log:97] 127.0.0.1 - - [16/Dec/2025 02:14:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-16 02:14:41,964] INFO [werkzeug._log:97] 127.0.0.1 - - [16/Dec/2025 02:14:41] "GET /?lang=ur HTTP/1.1" 200 -
+[2025-12-16 02:14:41,992] INFO [werkzeug._log:97] 127.0.0.1 - - [16/Dec/2025 02:14:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-16 02:14:48,517] INFO [werkzeug._log:97] 127.0.0.1 - - [16/Dec/2025 02:14:48] "GET /?lang=ar HTTP/1.1" 200 -
+[2025-12-16 02:14:48,536] INFO [werkzeug._log:97] 127.0.0.1 - - [16/Dec/2025 02:14:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-16 02:14:52,503] INFO [werkzeug._log:97] 127.0.0.1 - - [16/Dec/2025 02:14:52] "GET /?lang=en HTTP/1.1" 200 -
+[2025-12-16 02:14:52,532] INFO [werkzeug._log:97] 127.0.0.1 - - [16/Dec/2025 02:14:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-16 02:14:58,583] INFO [werkzeug._log:97] 127.0.0.1 - - [16/Dec/2025 02:14:58] "GET /?lang=ur HTTP/1.1" 200 -
+[2025-12-16 02:14:58,614] INFO [werkzeug._log:97] 127.0.0.1 - - [16/Dec/2025 02:14:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-16 02:15:04,937] INFO [werkzeug._log:97] 127.0.0.1 - - [16/Dec/2025 02:15:04] "GET /?lang=ar HTTP/1.1" 200 -
+[2025-12-16 02:15:04,960] INFO [werkzeug._log:97] 127.0.0.1 - - [16/Dec/2025 02:15:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-16 02:15:11,049] INFO [werkzeug._log:97] 127.0.0.1 - - [16/Dec/2025 02:15:11] "GET /?lang=en HTTP/1.1" 200 -
+[2025-12-16 02:15:11,066] INFO [werkzeug._log:97] 127.0.0.1 - - [16/Dec/2025 02:15:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-16 02:15:26,600] INFO [werkzeug._log:97]  * Detected change in 'D:\\AI human\\human-20251124T190931Z-1-001\\human\\app.py', reloading
+[2025-12-16 02:15:29,511] INFO [werkzeug._log:97]  * Restarting with stat
+[2025-12-16 02:15:30,708] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-16 02:15:30,709] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-16 02:15:33,254] INFO [app.create_app:111] Application initialized successfully
+[2025-12-16 02:15:33,264] WARNING [werkzeug._log:97]  * Debugger is active!
+[2025-12-16 02:15:33,267] INFO [werkzeug._log:97]  * Debugger PIN: 128-301-784
+[2025-12-17 22:19:41,645] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-17 22:19:41,646] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-17 22:19:48,365] INFO [app.create_app:111] Application initialized successfully
+[2025-12-17 22:19:48,393] INFO [werkzeug._log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.128.80.43:5000
+[2025-12-17 22:19:48,393] INFO [werkzeug._log:97] [33mPress CTRL+C to quit[0m
+[2025-12-17 22:19:48,449] INFO [werkzeug._log:97]  * Restarting with stat
+[2025-12-17 22:19:49,078] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-17 22:19:49,079] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-17 22:19:50,281] INFO [app.create_app:111] Application initialized successfully
+[2025-12-17 22:19:50,286] WARNING [werkzeug._log:97]  * Debugger is active!
+[2025-12-17 22:19:50,289] INFO [werkzeug._log:97]  * Debugger PIN: 128-301-784
+[2025-12-17 22:22:06,150] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:22:06] "GET / HTTP/1.1" 200 -
+[2025-12-17 22:22:06,176] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:22:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:22:06,202] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:22:06] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-17 22:22:06,268] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:22:06,285] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:22:06] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:27:00,529] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:27:00] "GET /monitor HTTP/1.1" 200 -
+[2025-12-17 22:27:00,558] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:27:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:27:00,607] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:27:00] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-17 22:27:00,670] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:27:00,681] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:27:00] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:27:50,161] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:27:50,189] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:27:50] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:52:07,443] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:07] "GET / HTTP/1.1" 200 -
+[2025-12-17 22:52:07,466] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:52:07,495] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:07] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-17 22:52:07,545] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:52:07,571] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:07] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:52:08,539] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:08] "GET / HTTP/1.1" 200 -
+[2025-12-17 22:52:08,550] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:52:08,600] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:52:08,631] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:08] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:52:09,385] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:09] "GET / HTTP/1.1" 200 -
+[2025-12-17 22:52:09,409] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:52:09,444] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:52:09,459] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:09] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:52:09,621] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:09] "GET / HTTP/1.1" 200 -
+[2025-12-17 22:52:09,635] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:52:09,670] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:52:09,689] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:09] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:52:10,218] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:10] "GET / HTTP/1.1" 200 -
+[2025-12-17 22:52:10,234] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:52:10,262] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:52:10,287] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:10] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:52:10,397] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:10] "GET / HTTP/1.1" 200 -
+[2025-12-17 22:52:10,420] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:52:10,448] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:52:10,485] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:10] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:52:10,596] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:10] "GET / HTTP/1.1" 200 -
+[2025-12-17 22:52:10,620] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:52:10,646] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:52:10,681] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:10] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:52:10,768] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:10] "GET / HTTP/1.1" 200 -
+[2025-12-17 22:52:10,788] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:52:10,815] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:52:10,851] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:10] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:52:10,972] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:10] "GET / HTTP/1.1" 200 -
+[2025-12-17 22:52:10,996] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:52:11,025] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:52:11,037] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:11] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:52:11,227] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:11] "GET / HTTP/1.1" 200 -
+[2025-12-17 22:52:11,253] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:52:11,281] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:52:11,317] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:11] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:52:11,395] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:11] "GET / HTTP/1.1" 200 -
+[2025-12-17 22:52:11,421] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:52:11,447] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:52:11,485] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:11] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:52:11,577] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:11] "GET / HTTP/1.1" 200 -
+[2025-12-17 22:52:11,605] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:52:11,629] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:52:11,665] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:11] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:52:11,757] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:11] "GET / HTTP/1.1" 200 -
+[2025-12-17 22:52:11,782] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:52:11,810] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:52:11,850] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:11] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:52:11,918] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:11] "GET / HTTP/1.1" 200 -
+[2025-12-17 22:52:11,935] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:52:11,961] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:52:11,993] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:11] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:52:12,070] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:12] "GET / HTTP/1.1" 200 -
+[2025-12-17 22:52:12,095] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:52:12,116] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:52:12,161] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:12] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:52:12,259] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:12] "GET / HTTP/1.1" 200 -
+[2025-12-17 22:52:12,286] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:52:12,311] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:52:12,337] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:12] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:52:12,496] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:12] "GET / HTTP/1.1" 200 -
+[2025-12-17 22:52:12,512] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:52:12,553] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:52:12,583] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:12] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:52:12,759] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:12] "GET / HTTP/1.1" 200 -
+[2025-12-17 22:52:12,783] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:52:12,809] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:52:12,839] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:12] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:52:12,915] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:12] "GET / HTTP/1.1" 200 -
+[2025-12-17 22:52:12,929] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:52:12,955] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:52:12,975] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:12] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:52:13,090] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:13] "GET / HTTP/1.1" 200 -
+[2025-12-17 22:52:13,117] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:52:13,143] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:52:13,171] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:13] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-17 22:52:13,334] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:13] "GET / HTTP/1.1" 200 -
+[2025-12-17 22:52:13,361] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-17 22:52:13,389] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-17 22:52:13,409] INFO [werkzeug._log:97] 127.0.0.1 - - [17/Dec/2025 22:52:13] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:11:43,119] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-19 14:11:43,121] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-19 14:11:48,313] INFO [app.create_app:111] Application initialized successfully
+[2025-12-19 14:11:48,341] INFO [werkzeug._log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.128.80.130:5000
+[2025-12-19 14:11:48,341] INFO [werkzeug._log:97] [33mPress CTRL+C to quit[0m
+[2025-12-19 14:11:48,387] INFO [werkzeug._log:97]  * Restarting with stat
+[2025-12-19 14:11:49,250] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-19 14:11:49,250] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-19 14:11:50,903] INFO [app.create_app:111] Application initialized successfully
+[2025-12-19 14:11:50,912] WARNING [werkzeug._log:97]  * Debugger is active!
+[2025-12-19 14:11:50,916] INFO [werkzeug._log:97]  * Debugger PIN: 128-301-784
+[2025-12-19 14:11:54,802] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:11:54] "GET / HTTP/1.1" 200 -
+[2025-12-19 14:11:54,926] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:11:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-19 14:11:54,986] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:11:54] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-19 14:11:55,216] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:11:55,244] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:11:55] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:12:11,151] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:12:11] "GET /monitor HTTP/1.1" 200 -
+[2025-12-19 14:12:11,185] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:12:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-19 14:12:11,816] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:12:12,008] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:12:12] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:13:54,979] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:13:55,039] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:13:55] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:13:57,205] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:13:57] "GET /monitor HTTP/1.1" 200 -
+[2025-12-19 14:13:57,235] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:13:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-19 14:13:57,321] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:13:57,369] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:13:57] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:14:25,384] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:14:25] "GET /skin HTTP/1.1" 200 -
+[2025-12-19 14:14:25,419] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:14:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-19 14:14:25,584] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:14:25,695] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:14:25] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:16:07,935] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:16:07] "POST /skin HTTP/1.1" 200 -
+[2025-12-19 14:16:08,661] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:16:08] "POST /skin HTTP/1.1" 200 -
+[2025-12-19 14:16:08,777] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:16:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-19 14:16:08,964] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:16:09,019] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:16:09] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:18:47,779] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:18:47] "GET /skin?lang=es HTTP/1.1" 200 -
+[2025-12-19 14:18:47,857] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:18:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-19 14:18:48,028] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:18:48,097] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:18:48] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:18:50,871] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:18:50] "GET /skin?lang=en HTTP/1.1" 200 -
+[2025-12-19 14:18:50,895] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:18:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-19 14:18:50,967] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:18:51,025] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:18:51] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:18:54,422] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:18:54] "GET /monitor HTTP/1.1" 200 -
+[2025-12-19 14:18:54,464] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:18:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-19 14:18:54,554] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:18:54,652] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:18:54] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:18:55,557] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:18:55] "GET /status HTTP/1.1" 200 -
+[2025-12-19 14:18:55,619] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:18:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-19 14:18:55,749] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:18:55,816] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:18:55] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:18:56,387] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:18:56] "GET / HTTP/1.1" 200 -
+[2025-12-19 14:18:56,422] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:18:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-19 14:18:56,478] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:18:56,521] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:18:56] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:19:42,582] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:19:42] "POST /find HTTP/1.1" 200 -
+[2025-12-19 14:19:42,606] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:19:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-19 14:19:42,666] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:19:42,710] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:19:42] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:19:43,207] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:19:43] "POST /find HTTP/1.1" 200 -
+[2025-12-19 14:20:04,898] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:20:04,966] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:20:04] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:20:27,395] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:20:27] "POST /match HTTP/1.1" 200 -
+[2025-12-19 14:20:27,420] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:20:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-19 14:20:27,467] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:20:27,509] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:20:27] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:22:27,294] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:22:27,338] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:22:27] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:22:32,713] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:22:32] "GET /register HTTP/1.1" 200 -
+[2025-12-19 14:22:32,736] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:22:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-19 14:22:32,818] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:22:33,028] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:22:33] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:22:36,265] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:22:36,323] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:22:36] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:22:38,035] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:22:38] "GET /login HTTP/1.1" 200 -
+[2025-12-19 14:22:38,052] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:22:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-19 14:22:38,094] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:22:38,118] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:22:38] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:22:58,690] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:22:58,741] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:22:58] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:22:59,415] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:22:59,460] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:22:59] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:23:11,036] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:23:11,099] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:23:11] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:23:11,961] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:23:12,028] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:23:12] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-19 14:23:12,999] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 14:23:13,035] INFO [werkzeug._log:97] 127.0.0.1 - - [19/Dec/2025 14:23:13] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-21 15:56:29,339] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-21 15:56:29,340] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-21 15:56:42,696] INFO [app.create_app:111] Application initialized successfully
+[2025-12-21 15:56:42,726] INFO [werkzeug._log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.112:5000
+[2025-12-21 15:56:42,727] INFO [werkzeug._log:97] [33mPress CTRL+C to quit[0m
+[2025-12-21 15:56:42,768] INFO [werkzeug._log:97]  * Restarting with stat
+[2025-12-21 15:56:43,477] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-21 15:56:43,477] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-21 15:56:44,962] INFO [app.create_app:111] Application initialized successfully
+[2025-12-21 15:56:44,973] WARNING [werkzeug._log:97]  * Debugger is active!
+[2025-12-21 15:56:44,986] INFO [werkzeug._log:97]  * Debugger PIN: 128-301-784
+[2025-12-21 15:57:07,905] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 15:57:07] "GET / HTTP/1.1" 200 -
+[2025-12-21 15:57:08,016] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 15:57:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-21 15:57:08,063] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 15:57:08] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-21 15:57:08,188] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-21 15:57:08,208] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 15:57:08] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-21 15:57:34,577] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 15:57:34] "GET /monitor HTTP/1.1" 200 -
+[2025-12-21 15:57:34,602] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 15:57:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-21 15:57:34,685] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-21 15:57:34,729] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 15:57:34] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-21 15:58:14,659] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 15:58:14] "GET /skin HTTP/1.1" 200 -
+[2025-12-21 15:58:14,774] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 15:58:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-21 15:58:14,924] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-21 15:58:14,953] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 15:58:14] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-21 15:58:49,444] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 15:58:49] "POST /skin HTTP/1.1" 200 -
+[2025-12-21 15:58:49,477] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 15:58:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-21 15:58:49,571] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-21 15:58:49,580] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 15:58:49] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-21 16:00:44,602] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 16:00:44] "GET /skin HTTP/1.1" 200 -
+[2025-12-21 16:00:45,206] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-21 16:00:45,387] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 16:00:45] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-21 16:02:37,656] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 16:02:37] "GET / HTTP/1.1" 200 -
+[2025-12-21 16:02:37,702] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 16:02:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-21 16:02:37,796] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-21 16:02:37,852] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 16:02:37] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-21 16:03:09,783] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-21 16:03:09,823] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 16:03:09] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-21 16:03:11,474] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-21 16:03:11,527] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 16:03:11] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-21 16:03:13,755] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 16:03:13] "POST /find HTTP/1.1" 200 -
+[2025-12-21 16:03:14,610] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-21 16:03:14,647] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 16:03:14] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-21 16:03:14,816] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 16:03:14] "POST /find HTTP/1.1" 200 -
+[2025-12-21 16:03:16,012] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-21 16:03:16,100] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 16:03:16] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-21 16:03:38,355] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 16:03:38] "POST /find HTTP/1.1" 200 -
+[2025-12-21 16:03:38,380] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 16:03:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-21 16:03:38,460] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-21 16:03:38,471] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 16:03:38] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-21 16:05:25,609] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 16:05:25] "GET / HTTP/1.1" 200 -
+[2025-12-21 16:05:25,694] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 16:05:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-21 16:05:25,881] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-21 16:05:25,964] INFO [werkzeug._log:97] 127.0.0.1 - - [21/Dec/2025 16:05:25] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-22 03:26:19,937] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-22 03:26:19,938] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-22 03:26:23,227] INFO [app.create_app:111] Application initialized successfully
+[2025-12-22 03:26:23,252] INFO [werkzeug._log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.112:5000
+[2025-12-22 03:26:23,252] INFO [werkzeug._log:97] [33mPress CTRL+C to quit[0m
+[2025-12-22 03:26:23,302] INFO [werkzeug._log:97]  * Restarting with stat
+[2025-12-22 03:26:24,321] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-22 03:26:24,321] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-22 03:26:26,189] INFO [app.create_app:111] Application initialized successfully
+[2025-12-22 03:26:26,197] WARNING [werkzeug._log:97]  * Debugger is active!
+[2025-12-22 03:26:26,210] INFO [werkzeug._log:97]  * Debugger PIN: 128-301-784
+[2025-12-22 03:26:37,399] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 03:26:37] "GET / HTTP/1.1" 200 -
+[2025-12-22 03:26:37,596] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 03:26:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-22 03:26:37,660] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 03:26:37] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-22 03:26:37,800] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-22 03:26:37,829] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 03:26:37] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-22 04:03:08,816] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:08] "GET /login HTTP/1.1" 200 -
+[2025-12-22 04:03:08,851] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-22 04:03:08,884] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:08] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-22 04:03:08,922] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-22 04:03:08,962] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:08] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-22 04:03:10,947] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:10] "GET /monitor HTTP/1.1" 200 -
+[2025-12-22 04:03:10,992] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-22 04:03:11,024] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:11] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-22 04:03:11,304] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-22 04:03:11,453] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:11] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-22 04:03:12,733] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:12] "GET / HTTP/1.1" 200 -
+[2025-12-22 04:03:12,791] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-22 04:03:13,036] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:13] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-22 04:03:13,112] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-22 04:03:13,183] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:13] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-22 04:03:15,158] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:15] "GET /monitor HTTP/1.1" 200 -
+[2025-12-22 04:03:15,190] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-22 04:03:15,270] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-22 04:03:15,361] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:15] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-22 04:03:19,360] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:19] "GET /skin HTTP/1.1" 200 -
+[2025-12-22 04:03:19,432] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-22 04:03:19,509] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-22 04:03:19,577] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:19] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-22 04:03:24,332] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:24] "GET / HTTP/1.1" 200 -
+[2025-12-22 04:03:24,372] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-22 04:03:24,424] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-22 04:03:24,482] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:24] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-22 04:03:25,579] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:25] "GET /status HTTP/1.1" 200 -
+[2025-12-22 04:03:25,604] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-22 04:03:25,651] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-22 04:03:25,709] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:25] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-22 04:03:27,462] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:27] "GET /monitor HTTP/1.1" 200 -
+[2025-12-22 04:03:27,492] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-22 04:03:27,554] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-22 04:03:27,678] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:27] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-22 04:03:30,369] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:30] "GET /status HTTP/1.1" 200 -
+[2025-12-22 04:03:30,437] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-22 04:03:30,511] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-22 04:03:30,558] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:30] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-22 04:03:31,328] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:31] "GET /monitor HTTP/1.1" 200 -
+[2025-12-22 04:03:31,360] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-22 04:03:31,474] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-22 04:03:31,599] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:31] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-22 04:03:33,359] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:33] "GET /skin HTTP/1.1" 200 -
+[2025-12-22 04:03:33,412] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-22 04:03:33,481] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-22 04:03:33,517] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:33] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-22 04:03:35,624] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:35] "GET /login HTTP/1.1" 200 -
+[2025-12-22 04:03:35,664] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-22 04:03:35,705] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-22 04:03:35,734] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:35] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-22 04:03:38,525] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:38] "GET /skin HTTP/1.1" 200 -
+[2025-12-22 04:03:38,560] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-22 04:03:38,624] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-22 04:03:38,665] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:38] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-22 04:03:43,067] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:43] "GET / HTTP/1.1" 200 -
+[2025-12-22 04:03:43,108] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-22 04:03:43,193] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-22 04:03:43,262] INFO [werkzeug._log:97] 127.0.0.1 - - [22/Dec/2025 04:03:43] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-25 00:04:33,457] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-25 00:04:33,460] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-25 00:04:42,484] INFO [app.create_app:111] Application initialized successfully
+[2025-12-25 00:04:42,519] INFO [werkzeug._log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.105:5000
+[2025-12-25 00:04:42,520] INFO [werkzeug._log:97] [33mPress CTRL+C to quit[0m
+[2025-12-25 00:04:42,563] INFO [werkzeug._log:97]  * Restarting with stat
+[2025-12-25 00:04:43,357] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-25 00:04:43,358] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-25 00:04:44,868] INFO [app.create_app:111] Application initialized successfully
+[2025-12-25 00:04:44,876] WARNING [werkzeug._log:97]  * Debugger is active!
+[2025-12-25 00:04:44,881] INFO [werkzeug._log:97]  * Debugger PIN: 128-301-784
+[2025-12-25 00:04:57,000] INFO [werkzeug._log:97] 127.0.0.1 - - [25/Dec/2025 00:04:57] "GET / HTTP/1.1" 200 -
+[2025-12-25 00:04:57,123] INFO [werkzeug._log:97] 127.0.0.1 - - [25/Dec/2025 00:04:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-25 00:04:57,172] INFO [werkzeug._log:97] 127.0.0.1 - - [25/Dec/2025 00:04:57] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-25 00:04:57,428] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-25 00:04:57,452] INFO [werkzeug._log:97] 127.0.0.1 - - [25/Dec/2025 00:04:57] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-29 23:28:25,145] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-29 23:28:25,146] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-29 23:28:29,239] INFO [app.create_app:111] Application initialized successfully
+[2025-12-29 23:28:29,270] INFO [werkzeug._log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.111:5000
+[2025-12-29 23:28:29,271] INFO [werkzeug._log:97] [33mPress CTRL+C to quit[0m
+[2025-12-29 23:28:29,309] INFO [werkzeug._log:97]  * Restarting with stat
+[2025-12-29 23:28:29,932] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-29 23:28:29,933] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-29 23:28:31,222] INFO [app.create_app:111] Application initialized successfully
+[2025-12-29 23:28:31,230] WARNING [werkzeug._log:97]  * Debugger is active!
+[2025-12-29 23:28:31,244] INFO [werkzeug._log:97]  * Debugger PIN: 128-301-784
+[2025-12-29 23:29:52,122] INFO [werkzeug._log:97] 127.0.0.1 - - [29/Dec/2025 23:29:52] "GET / HTTP/1.1" 200 -
+[2025-12-29 23:29:52,244] INFO [werkzeug._log:97] 127.0.0.1 - - [29/Dec/2025 23:29:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-29 23:29:52,296] INFO [werkzeug._log:97] 127.0.0.1 - - [29/Dec/2025 23:29:52] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-29 23:29:52,421] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-29 23:29:52,436] INFO [werkzeug._log:97] 127.0.0.1 - - [29/Dec/2025 23:29:52] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-29 23:34:26,322] INFO [werkzeug._log:97] 127.0.0.1 - - [29/Dec/2025 23:34:26] "GET / HTTP/1.1" 200 -
+[2025-12-29 23:34:26,345] INFO [werkzeug._log:97] 127.0.0.1 - - [29/Dec/2025 23:34:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-29 23:34:26,424] INFO [werkzeug._log:97] 127.0.0.1 - - [29/Dec/2025 23:34:26] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-29 23:34:26,446] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-29 23:34:26,498] INFO [werkzeug._log:97] 127.0.0.1 - - [29/Dec/2025 23:34:26] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-29 23:34:28,775] INFO [werkzeug._log:97] 127.0.0.1 - - [29/Dec/2025 23:34:28] "GET /monitor HTTP/1.1" 200 -
+[2025-12-29 23:34:28,797] INFO [werkzeug._log:97] 127.0.0.1 - - [29/Dec/2025 23:34:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-29 23:34:37,375] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-29 23:34:37,495] INFO [werkzeug._log:97] 127.0.0.1 - - [29/Dec/2025 23:34:37] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 03:29:23,726] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-31 03:29:23,726] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-31 03:29:28,072] INFO [app.create_app:111] Application initialized successfully
+[2025-12-31 03:29:28,106] INFO [werkzeug._log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.128.80.75:5000
+[2025-12-31 03:29:28,107] INFO [werkzeug._log:97] [33mPress CTRL+C to quit[0m
+[2025-12-31 03:29:28,154] INFO [werkzeug._log:97]  * Restarting with stat
+[2025-12-31 03:29:29,063] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-31 03:29:29,065] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-31 03:29:30,935] INFO [app.create_app:111] Application initialized successfully
+[2025-12-31 03:29:30,944] WARNING [werkzeug._log:97]  * Debugger is active!
+[2025-12-31 03:29:30,957] INFO [werkzeug._log:97]  * Debugger PIN: 128-301-784
+[2025-12-31 03:34:19,182] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 03:34:19] "GET / HTTP/1.1" 200 -
+[2025-12-31 03:34:19,207] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 03:34:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 03:34:19,239] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 03:34:19] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-31 03:34:19,329] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 03:34:19,420] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 03:34:19] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 03:34:59,046] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 03:34:59] "GET /skin HTTP/1.1" 200 -
+[2025-12-31 03:34:59,087] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 03:34:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 03:34:59,177] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 03:34:59,224] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 03:34:59] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 03:35:43,322] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 03:35:43] "POST /skin HTTP/1.1" 200 -
+[2025-12-31 03:35:43,361] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 03:35:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 03:35:43,451] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 03:35:43,497] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 03:35:43] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 03:36:05,950] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 03:36:05] "GET /monitor HTTP/1.1" 200 -
+[2025-12-31 03:36:06,068] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 03:36:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 03:36:06,505] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 03:36:06,660] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 03:36:06] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 03:47:31,447] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 03:47:31] "GET /monitor HTTP/1.1" 200 -
+[2025-12-31 03:47:31,484] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 03:47:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 03:47:31,600] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 03:47:31] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-31 03:47:33,202] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 03:47:33,276] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 03:47:33] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 03:57:49,644] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 03:57:49,673] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 03:57:49] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 04:02:57,249] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-31 04:02:57,250] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-31 04:02:58,950] INFO [app.create_app:111] Application initialized successfully
+[2025-12-31 04:02:58,976] INFO [werkzeug._log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.128.80.75:5000
+[2025-12-31 04:02:58,976] INFO [werkzeug._log:97] [33mPress CTRL+C to quit[0m
+[2025-12-31 04:02:59,011] INFO [werkzeug._log:97]  * Restarting with stat
+[2025-12-31 04:02:59,636] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-31 04:02:59,637] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-31 04:03:00,842] INFO [app.create_app:111] Application initialized successfully
+[2025-12-31 04:03:00,849] WARNING [werkzeug._log:97]  * Debugger is active!
+[2025-12-31 04:03:00,852] INFO [werkzeug._log:97]  * Debugger PIN: 128-301-784
+[2025-12-31 04:03:22,283] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:03:22] "GET /monitor HTTP/1.1" 200 -
+[2025-12-31 04:03:22,403] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:03:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 04:03:22,542] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:03:22] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-31 04:03:23,048] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 04:03:23,155] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:03:23] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 04:03:35,294] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:03:35] "POST /skin HTTP/1.1" 200 -
+[2025-12-31 04:07:58,242] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:07:58] "GET /monitor HTTP/1.1" 200 -
+[2025-12-31 04:07:58,424] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:07:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 04:07:58,539] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:07:58] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-31 04:07:59,117] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 04:07:59,192] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:07:59] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 04:08:11,186] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:08:11] "GET /monitor HTTP/1.1" 200 -
+[2025-12-31 04:08:11,284] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:08:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 04:08:11,373] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:08:11] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-31 04:08:12,021] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 04:08:12,111] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:08:12] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 04:08:46,899] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:08:46] "GET /skin HTTP/1.1" 200 -
+[2025-12-31 04:08:47,030] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 04:08:47,063] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:08:47] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 04:08:55,598] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:08:55] "GET /monitor HTTP/1.1" 200 -
+[2025-12-31 04:08:55,633] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:08:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 04:08:55,849] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 04:08:55,884] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:08:55] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 04:10:04,068] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:10:04] "GET /monitor HTTP/1.1" 200 -
+[2025-12-31 04:10:04,260] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:10:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 04:10:04,706] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 04:10:04,792] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:10:04] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 04:10:35,343] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:10:35] "GET /monitor HTTP/1.1" 200 -
+[2025-12-31 04:10:35,517] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:10:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 04:10:36,057] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 04:10:36,188] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:10:36] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 04:14:47,268] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:14:47] "GET / HTTP/1.1" 200 -
+[2025-12-31 04:14:47,296] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:14:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 04:14:47,319] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:14:47] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-31 04:14:47,373] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 04:14:47,389] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:14:47] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 04:14:49,524] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:14:49] "GET /monitor HTTP/1.1" 200 -
+[2025-12-31 04:14:49,562] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:14:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 04:14:49,700] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 04:14:49,713] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:14:49] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 04:16:12,706] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:16:12] "GET /monitor HTTP/1.1" 200 -
+[2025-12-31 04:16:12,826] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:16:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 04:16:13,179] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 04:16:13,260] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:16:13] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 04:17:47,708] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:17:47] "GET /monitor HTTP/1.1" 200 -
+[2025-12-31 04:17:47,818] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:17:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 04:17:48,153] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 04:17:48,242] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:17:48] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 04:18:18,532] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:18:18] "GET /monitor HTTP/1.1" 200 -
+[2025-12-31 04:18:18,687] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:18:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 04:18:18,971] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 04:18:19,061] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:18:19] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 04:19:22,764] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 04:19:22,789] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:19:22] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 04:50:34,597] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:50:34] "GET / HTTP/1.1" 200 -
+[2025-12-31 04:50:34,629] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:50:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 04:50:34,679] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:50:34] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-31 04:50:34,704] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 04:50:34,745] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:50:34] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 04:50:35,593] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:50:35] "GET / HTTP/1.1" 200 -
+[2025-12-31 04:50:35,614] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:50:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 04:50:35,669] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 04:50:35,693] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 04:50:35] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 12:48:33,200] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-31 12:48:33,201] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-31 12:48:36,324] INFO [app.create_app:111] Application initialized successfully
+[2025-12-31 12:48:36,744] INFO [werkzeug._log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.15.0.86:5000
+[2025-12-31 12:48:36,744] INFO [werkzeug._log:97] [33mPress CTRL+C to quit[0m
+[2025-12-31 12:48:36,792] INFO [werkzeug._log:97]  * Restarting with stat
+[2025-12-31 12:48:37,529] INFO [app.setup_logging:60] Application starting in unknown mode
+[2025-12-31 12:48:37,530] INFO [app.setup_logging:61] Log level: INFO
+[2025-12-31 12:48:39,177] INFO [app.create_app:111] Application initialized successfully
+[2025-12-31 12:48:39,186] WARNING [werkzeug._log:97]  * Debugger is active!
+[2025-12-31 12:48:39,198] INFO [werkzeug._log:97]  * Debugger PIN: 128-301-784
+[2025-12-31 12:48:46,927] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 12:48:46] "GET / HTTP/1.1" 200 -
+[2025-12-31 12:48:47,033] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 12:48:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 12:48:47,091] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 12:48:47] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-31 12:48:47,322] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 12:48:47,347] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 12:48:47] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 12:53:00,732] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 12:53:00] "GET /monitor HTTP/1.1" 200 -
+[2025-12-31 12:53:00,780] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 12:53:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 12:53:00,824] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 12:53:00] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-31 12:53:01,431] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 12:53:01,789] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 12:53:01] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 12:55:12,213] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 12:55:12,251] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 12:55:12] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 13:20:14,269] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 13:20:14] "GET / HTTP/1.1" 200 -
+[2025-12-31 13:20:14,346] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 13:20:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 13:20:14,408] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 13:20:14] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2025-12-31 13:20:14,459] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 13:20:14,537] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 13:20:14] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 13:20:17,669] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 13:20:17] "GET /monitor HTTP/1.1" 200 -
+[2025-12-31 13:20:17,702] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 13:20:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 13:20:18,114] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 13:20:18,303] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 13:20:18] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 13:21:14,655] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 13:21:14] "GET /monitor HTTP/1.1" 200 -
+[2025-12-31 13:21:15,266] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 13:21:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-12-31 13:21:15,928] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 13:21:16,116] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 13:21:16] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-12-31 13:21:18,078] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-31 13:21:18,141] INFO [werkzeug._log:97] 127.0.0.1 - - [31/Dec/2025 13:21:18] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-01 13:53:53,747] INFO [app.setup_logging:60] Application starting in unknown mode
+[2026-01-01 13:53:53,748] INFO [app.setup_logging:61] Log level: INFO
+[2026-01-01 13:53:58,831] INFO [app.create_app:111] Application initialized successfully
+[2026-01-01 13:53:58,860] INFO [werkzeug._log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.75.45:5000
+[2026-01-01 13:53:58,862] INFO [werkzeug._log:97] [33mPress CTRL+C to quit[0m
+[2026-01-01 13:53:58,901] INFO [werkzeug._log:97]  * Restarting with stat
+[2026-01-01 13:53:59,555] INFO [app.setup_logging:60] Application starting in unknown mode
+[2026-01-01 13:53:59,556] INFO [app.setup_logging:61] Log level: INFO
+[2026-01-01 13:54:00,978] INFO [app.create_app:111] Application initialized successfully
+[2026-01-01 13:54:00,985] WARNING [werkzeug._log:97]  * Debugger is active!
+[2026-01-01 13:54:00,988] INFO [werkzeug._log:97]  * Debugger PIN: 128-301-784
+[2026-01-01 13:54:13,823] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 13:54:13] "GET / HTTP/1.1" 200 -
+[2026-01-01 13:54:13,844] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 13:54:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-01 13:54:13,886] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 13:54:13] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2026-01-01 13:54:13,970] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-01 13:54:13,999] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 13:54:13] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-01 13:54:35,710] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 13:54:35] "GET /monitor HTTP/1.1" 200 -
+[2026-01-01 13:54:35,744] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 13:54:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-01 13:54:36,410] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-01 13:54:36,583] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 13:54:36] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-01 13:54:58,102] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-01 13:54:58,356] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 13:54:58] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-01 13:55:07,509] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 13:55:07] "GET /skin HTTP/1.1" 200 -
+[2026-01-01 13:55:07,551] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 13:55:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-01 13:55:07,581] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 13:55:07] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2026-01-01 13:55:07,651] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-01 13:55:07,750] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 13:55:07] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-01 14:52:43,355] INFO [app.setup_logging:60] Application starting in unknown mode
+[2026-01-01 14:52:43,356] INFO [app.setup_logging:61] Log level: INFO
+[2026-01-01 14:52:46,440] INFO [app.create_app:111] Application initialized successfully
+[2026-01-01 14:52:46,469] INFO [werkzeug._log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.75.45:5000
+[2026-01-01 14:52:46,469] INFO [werkzeug._log:97] [33mPress CTRL+C to quit[0m
+[2026-01-01 14:52:46,512] INFO [werkzeug._log:97]  * Restarting with stat
+[2026-01-01 14:52:47,404] INFO [app.setup_logging:60] Application starting in unknown mode
+[2026-01-01 14:52:47,405] INFO [app.setup_logging:61] Log level: INFO
+[2026-01-01 14:52:49,284] INFO [app.create_app:111] Application initialized successfully
+[2026-01-01 14:52:49,296] WARNING [werkzeug._log:97]  * Debugger is active!
+[2026-01-01 14:52:49,299] INFO [werkzeug._log:97]  * Debugger PIN: 128-301-784
+[2026-01-01 14:52:52,654] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 14:52:52] "GET / HTTP/1.1" 200 -
+[2026-01-01 14:52:52,826] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 14:52:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-01 14:52:52,880] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 14:52:52] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2026-01-01 14:52:53,044] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-01 14:52:53,071] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 14:52:53] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-01 14:53:02,046] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 14:53:02] "GET /skin HTTP/1.1" 200 -
+[2026-01-01 14:53:02,076] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 14:53:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-01 14:53:02,160] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-01 14:53:02,196] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 14:53:02] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-01 14:53:03,942] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 14:53:03] "GET /monitor HTTP/1.1" 200 -
+[2026-01-01 14:53:03,994] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 14:53:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-01 14:53:04,637] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-01 14:53:04,746] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 14:53:04] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-01 14:54:01,056] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 14:54:01] "GET /skin HTTP/1.1" 200 -
+[2026-01-01 14:54:01,188] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-01 14:54:01,227] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 14:54:01] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-01 14:54:03,572] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 14:54:03] "GET / HTTP/1.1" 200 -
+[2026-01-01 14:54:03,661] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-01 14:54:03,719] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 14:54:03] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-01 16:09:12,905] INFO [app.setup_logging:60] Application starting in unknown mode
+[2026-01-01 16:09:12,905] INFO [app.setup_logging:61] Log level: INFO
+[2026-01-01 16:09:15,743] INFO [app.create_app:111] Application initialized successfully
+[2026-01-01 16:09:15,769] INFO [werkzeug._log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.75.45:5000
+[2026-01-01 16:09:15,769] INFO [werkzeug._log:97] [33mPress CTRL+C to quit[0m
+[2026-01-01 16:09:15,808] INFO [werkzeug._log:97]  * Restarting with stat
+[2026-01-01 16:09:16,471] INFO [app.setup_logging:60] Application starting in unknown mode
+[2026-01-01 16:09:16,472] INFO [app.setup_logging:61] Log level: INFO
+[2026-01-01 16:09:18,077] INFO [app.create_app:111] Application initialized successfully
+[2026-01-01 16:09:18,092] WARNING [werkzeug._log:97]  * Debugger is active!
+[2026-01-01 16:09:18,095] INFO [werkzeug._log:97]  * Debugger PIN: 128-301-784
+[2026-01-01 16:09:40,172] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 16:09:40] "GET / HTTP/1.1" 200 -
+[2026-01-01 16:09:40,202] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 16:09:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-01 16:09:40,252] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 16:09:40] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2026-01-01 16:09:40,352] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-01 16:09:40,374] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 16:09:40] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-01 16:09:53,974] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 16:09:53] "GET /monitor HTTP/1.1" 200 -
+[2026-01-01 16:09:54,004] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 16:09:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-01 16:09:54,073] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 16:09:54] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2026-01-01 16:09:54,284] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-01 16:09:54,309] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 16:09:54] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-01 16:10:26,833] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-01 16:10:26,880] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 16:10:26] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-01 16:10:28,405] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 16:10:28] "GET /skin HTTP/1.1" 200 -
+[2026-01-01 16:10:28,423] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 16:10:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-01 16:10:28,440] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 16:10:28] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2026-01-01 16:10:28,470] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-01 16:10:28,514] INFO [werkzeug._log:97] 127.0.0.1 - - [01/Jan/2026 16:10:28] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:20:32,701] INFO [app.setup_logging:60] Application starting in unknown mode
+[2026-01-06 00:20:32,702] INFO [app.setup_logging:61] Log level: INFO
+[2026-01-06 00:20:57,268] INFO [app.create_app:111] Application initialized successfully
+[2026-01-06 00:20:57,298] INFO [werkzeug._log:187] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.251.151:5000
+[2026-01-06 00:20:57,298] INFO [werkzeug._log:187] [33mPress CTRL+C to quit[0m
+[2026-01-06 00:20:57,301] INFO [werkzeug._log:187]  * Restarting with stat
+[2026-01-06 00:20:58,616] INFO [app.setup_logging:60] Application starting in unknown mode
+[2026-01-06 00:20:58,618] INFO [app.setup_logging:61] Log level: INFO
+[2026-01-06 00:21:07,194] INFO [app.create_app:111] Application initialized successfully
+[2026-01-06 00:21:07,203] WARNING [werkzeug._log:187]  * Debugger is active!
+[2026-01-06 00:21:07,205] INFO [werkzeug._log:187]  * Debugger PIN: 442-375-808
+[2026-01-06 00:21:50,173] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:21:50] "GET / HTTP/1.1" 200 -
+[2026-01-06 00:21:50,284] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:21:50] "GET / HTTP/1.1" 200 -
+[2026-01-06 00:21:50,330] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:21:50] "GET /static/css/style.css HTTP/1.1" 200 -
+[2026-01-06 00:21:50,347] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:21:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:21:50,370] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:21:50] "GET /static/images/doctor_team_bg.png HTTP/1.1" 200 -
+[2026-01-06 00:21:50,381] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:21:50] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2026-01-06 00:21:50,481] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:21:50,627] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:21:50] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:21:50,647] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:21:50,662] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:21:50] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:21:58,758] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:21:58] "GET /skin HTTP/1.1" 200 -
+[2026-01-06 00:21:58,778] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:21:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:21:58,870] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:21:58,898] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:21:58] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:22:28,208] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:22:28] "POST /skin HTTP/1.1" 200 -
+[2026-01-06 00:22:35,370] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:22:35] "POST /skin HTTP/1.1" 200 -
+[2026-01-06 00:22:48,858] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:22:48] "POST /skin HTTP/1.1" 200 -
+[2026-01-06 00:22:48,892] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:22:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:22:49,051] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:22:49,060] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:22:49] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:24:08,334] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:24:08] "GET /login HTTP/1.1" 200 -
+[2026-01-06 00:24:08,458] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:24:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:24:08,714] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:24:08,823] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:24:08] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:24:12,569] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:24:12] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2026-01-06 00:24:12,605] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:24:12] "GET / HTTP/1.1" 200 -
+[2026-01-06 00:24:12,651] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:24:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:24:12,723] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:24:12,775] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:24:12] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:24:49,869] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:24:49] "POST /find HTTP/1.1" 200 -
+[2026-01-06 00:24:49,886] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:24:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:24:49,997] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:24:50,006] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:24:50] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:29:23,424] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:29:23] "POST /find HTTP/1.1" 200 -
+[2026-01-06 00:29:23,595] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:29:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:29:23,844] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:29:23,895] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:29:23] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:29:28,246] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:29:28,275] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:29:28] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:29:32,041] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:29:32] "[32mPOST /reload HTTP/1.1[0m" 302 -
+[2026-01-06 00:29:32,069] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:29:32] "GET / HTTP/1.1" 200 -
+[2026-01-06 00:29:32,097] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:29:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:29:32,157] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:29:32,227] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:29:32] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:34:14,687] INFO [werkzeug._log:187]  * Detected change in 'D:\\AI human\\human-20251124T190931Z-1-001\\human\\src\\blueprints\\main.py', reloading
+[2026-01-06 00:34:17,883] INFO [werkzeug._log:187]  * Restarting with stat
+[2026-01-06 00:34:18,771] INFO [app.setup_logging:60] Application starting in unknown mode
+[2026-01-06 00:34:18,772] INFO [app.setup_logging:61] Log level: INFO
+[2026-01-06 00:34:22,422] INFO [app.create_app:111] Application initialized successfully
+[2026-01-06 00:34:22,431] WARNING [werkzeug._log:187]  * Debugger is active!
+[2026-01-06 00:34:22,432] INFO [werkzeug._log:187]  * Debugger PIN: 442-375-808
+[2026-01-06 00:35:54,811] INFO [app.setup_logging:60] Application starting in unknown mode
+[2026-01-06 00:35:54,811] INFO [app.setup_logging:61] Log level: INFO
+[2026-01-06 00:35:57,911] INFO [app.create_app:111] Application initialized successfully
+[2026-01-06 00:35:57,939] INFO [werkzeug._log:187] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.251.151:5000
+[2026-01-06 00:35:57,939] INFO [werkzeug._log:187] [33mPress CTRL+C to quit[0m
+[2026-01-06 00:35:57,941] INFO [werkzeug._log:187]  * Restarting with stat
+[2026-01-06 00:35:58,640] INFO [app.setup_logging:60] Application starting in unknown mode
+[2026-01-06 00:35:58,641] INFO [app.setup_logging:61] Log level: INFO
+[2026-01-06 00:36:01,754] INFO [app.create_app:111] Application initialized successfully
+[2026-01-06 00:36:01,764] WARNING [werkzeug._log:187]  * Debugger is active!
+[2026-01-06 00:36:01,765] INFO [werkzeug._log:187]  * Debugger PIN: 442-375-808
+[2026-01-06 00:37:16,029] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:37:16] "GET / HTTP/1.1" 200 -
+[2026-01-06 00:37:16,079] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:37:16] "GET /static/css/style.css HTTP/1.1" 200 -
+[2026-01-06 00:37:16,183] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:37:16,230] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:37:16] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:37:47,649] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:37:47] "[32mPOST /reload HTTP/1.1[0m" 302 -
+[2026-01-06 00:37:47,670] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:37:47] "GET / HTTP/1.1" 200 -
+[2026-01-06 00:37:47,690] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:37:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:37:47,749] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:37:47,781] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:37:47] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:37:56,616] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:37:56,643] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:37:56] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:38:00,366] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:38:00] "GET /skin HTTP/1.1" 200 -
+[2026-01-06 00:38:00,388] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:38:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:38:00,435] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:38:00,467] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:38:00] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:38:05,797] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:38:05,835] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:38:05] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:38:51,026] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:38:51] "GET / HTTP/1.1" 200 -
+[2026-01-06 00:38:51,044] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:38:51] "GET /static/css/style.css HTTP/1.1" 200 -
+[2026-01-06 00:38:51,072] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:38:51,103] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:38:51] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:41:52,492] INFO [app.setup_logging:60] Application starting in unknown mode
+[2026-01-06 00:41:52,492] INFO [app.setup_logging:61] Log level: INFO
+[2026-01-06 00:41:56,477] INFO [app.create_app:111] Application initialized successfully
+[2026-01-06 00:41:56,521] INFO [werkzeug._log:187] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.251.151:5000
+[2026-01-06 00:41:56,522] INFO [werkzeug._log:187] [33mPress CTRL+C to quit[0m
+[2026-01-06 00:41:56,524] INFO [werkzeug._log:187]  * Restarting with stat
+[2026-01-06 00:41:57,289] INFO [app.setup_logging:60] Application starting in unknown mode
+[2026-01-06 00:41:57,289] INFO [app.setup_logging:61] Log level: INFO
+[2026-01-06 00:42:00,413] INFO [app.create_app:111] Application initialized successfully
+[2026-01-06 00:42:00,422] WARNING [werkzeug._log:187]  * Debugger is active!
+[2026-01-06 00:42:00,425] INFO [werkzeug._log:187]  * Debugger PIN: 442-375-808
+[2026-01-06 00:43:01,379] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:01] "GET / HTTP/1.1" 200 -
+[2026-01-06 00:43:01,396] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:01] "GET /static/css/style.css HTTP/1.1" 200 -
+[2026-01-06 00:43:01,434] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:01] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2026-01-06 00:43:01,472] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:43:01,526] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:01] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:43:17,810] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:17] "[32mGET /logout HTTP/1.1[0m" 302 -
+[2026-01-06 00:43:17,845] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:17] "GET /login HTTP/1.1" 200 -
+[2026-01-06 00:43:17,876] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:43:17,923] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:43:17,954] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:17] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:43:25,377] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:25] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2026-01-06 00:43:25,421] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:25] "GET / HTTP/1.1" 200 -
+[2026-01-06 00:43:25,455] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:43:25,516] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:43:25,589] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:25] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:43:34,472] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:34] "GET /view_patients HTTP/1.1" 200 -
+[2026-01-06 00:43:34,493] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:43:34,502] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:34] "GET /static/uploads/6ea208d1-0d64-4693-ad4a-aee177f7b20b_WIN_20251211_00_34_57_Pro.jpg HTTP/1.1" 200 -
+[2026-01-06 00:43:34,505] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:34] "GET /static/uploads/7adb9fee-a554-48b4-906c-856e3a4bedc7_captured.jpg HTTP/1.1" 200 -
+[2026-01-06 00:43:34,512] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:34] "GET /static/uploads/ccbe7341-fda1-4047-9793-eb2983886827_WhatsApp_Image_2025-12-15_at_20.58.01_3febda1e.jpg HTTP/1.1" 200 -
+[2026-01-06 00:43:34,567] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:43:34,596] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:34] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:43:55,361] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:55] "GET / HTTP/1.1" 200 -
+[2026-01-06 00:43:55,417] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:43:55,466] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:43:55,526] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:55] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:43:58,894] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:58] "GET /search_patients HTTP/1.1" 200 -
+[2026-01-06 00:43:58,924] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:43:58,979] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:43:59,029] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:43:59] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:44:25,567] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:44:25] "POST /search_patients HTTP/1.1" 200 -
+[2026-01-06 00:44:25,625] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:44:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:44:25,708] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:44:25,801] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:44:25] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:44:37,897] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:44:37] "GET / HTTP/1.1" 200 -
+[2026-01-06 00:44:37,931] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:44:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:44:38,010] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:44:38,069] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:44:38] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:52:53,429] INFO [werkzeug._log:187]  * Detected change in 'D:\\AI human\\human-20251124T190931Z-1-001\\human\\src\\blueprints\\patients.py', reloading
+[2026-01-06 00:52:53,432] INFO [werkzeug._log:187]  * Detected change in 'D:\\AI human\\human-20251124T190931Z-1-001\\human\\src\\blueprints\\patients.py', reloading
+[2026-01-06 00:52:53,963] INFO [werkzeug._log:187]  * Detected change in 'D:\\AI human\\human-20251124T190931Z-1-001\\human\\src\\blueprints\\patients.py', reloading
+[2026-01-06 00:52:54,346] INFO [werkzeug._log:187]  * Restarting with stat
+[2026-01-06 00:52:55,043] INFO [werkzeug._log:187]  * Restarting with stat
+[2026-01-06 00:52:55,613] INFO [werkzeug._log:187]  * Restarting with stat
+[2026-01-06 00:52:55,701] INFO [app.setup_logging:60] Application starting in unknown mode
+[2026-01-06 00:52:55,702] INFO [app.setup_logging:61] Log level: INFO
+[2026-01-06 00:52:56,117] INFO [app.setup_logging:60] Application starting in unknown mode
+[2026-01-06 00:52:56,117] INFO [app.setup_logging:61] Log level: INFO
+[2026-01-06 00:52:56,602] INFO [app.setup_logging:60] Application starting in unknown mode
+[2026-01-06 00:52:56,603] INFO [app.setup_logging:61] Log level: INFO
+[2026-01-06 00:53:00,692] INFO [app.create_app:111] Application initialized successfully
+[2026-01-06 00:53:00,695] INFO [app.create_app:111] Application initialized successfully
+[2026-01-06 00:53:00,705] WARNING [werkzeug._log:187]  * Debugger is active!
+[2026-01-06 00:53:00,707] INFO [werkzeug._log:187]  * Debugger PIN: 442-375-808
+[2026-01-06 00:53:00,707] INFO [werkzeug._log:187]  * Debugger PIN: 442-375-808
+[2026-01-06 00:53:00,773] INFO [app.create_app:111] Application initialized successfully
+[2026-01-06 00:53:00,780] WARNING [werkzeug._log:187]  * Debugger is active!
+[2026-01-06 00:53:00,782] INFO [werkzeug._log:187]  * Debugger PIN: 442-375-808
+[2026-01-06 00:53:11,048] INFO [app.setup_logging:60] Application starting in unknown mode
+[2026-01-06 00:53:11,049] INFO [app.setup_logging:61] Log level: INFO
+[2026-01-06 00:53:14,498] INFO [app.create_app:111] Application initialized successfully
+[2026-01-06 00:53:14,529] INFO [werkzeug._log:187] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.251.151:5000
+[2026-01-06 00:53:14,530] INFO [werkzeug._log:187] [33mPress CTRL+C to quit[0m
+[2026-01-06 00:53:14,532] INFO [werkzeug._log:187]  * Restarting with stat
+[2026-01-06 00:53:15,305] INFO [app.setup_logging:60] Application starting in unknown mode
+[2026-01-06 00:53:15,305] INFO [app.setup_logging:61] Log level: INFO
+[2026-01-06 00:53:18,870] INFO [app.create_app:111] Application initialized successfully
+[2026-01-06 00:53:18,879] WARNING [werkzeug._log:187]  * Debugger is active!
+[2026-01-06 00:53:18,881] INFO [werkzeug._log:187]  * Debugger PIN: 442-375-808
+[2026-01-06 00:54:50,290] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:54:50] "GET / HTTP/1.1" 200 -
+[2026-01-06 00:54:50,374] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:54:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:54:50,428] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:54:50] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2026-01-06 00:54:50,513] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:54:50,594] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:54:50] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:55:02,581] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:55:02] "GET /search_patients HTTP/1.1" 200 -
+[2026-01-06 00:55:02,613] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:55:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:55:02,677] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:55:02,740] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:55:02] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:55:55,444] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:55:55] "POST /search_patients HTTP/1.1" 200 -
+[2026-01-06 00:55:55,524] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:55:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:55:55,622] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:55:55,701] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:55:55] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:56:23,999] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:56:23] "[32mGET /logout HTTP/1.1[0m" 302 -
+[2026-01-06 00:56:24,038] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:56:24] "GET /login HTTP/1.1" 200 -
+[2026-01-06 00:56:24,080] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:56:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:56:24,149] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:56:24,189] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:56:24] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:56:30,563] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:56:30] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2026-01-06 00:56:30,594] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:56:30] "GET / HTTP/1.1" 200 -
+[2026-01-06 00:56:30,644] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:56:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:56:30,712] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:56:30,777] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:56:30] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:56:36,123] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:56:36] "[32mGET /logout HTTP/1.1[0m" 302 -
+[2026-01-06 00:56:36,156] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:56:36] "GET /login HTTP/1.1" 200 -
+[2026-01-06 00:56:36,181] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:56:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:56:36,206] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:56:36,229] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:56:36] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 00:56:39,561] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:56:39] "GET /register HTTP/1.1" 200 -
+[2026-01-06 00:56:39,597] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:56:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 00:56:39,644] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 00:56:39,666] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 00:56:39] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:03:31,669] INFO [app.setup_logging:60] Application starting in unknown mode
+[2026-01-06 01:03:31,669] INFO [app.setup_logging:61] Log level: INFO
+[2026-01-06 01:03:35,522] INFO [app.create_app:111] Application initialized successfully
+[2026-01-06 01:03:35,544] INFO [werkzeug._log:187] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.251.151:5000
+[2026-01-06 01:03:35,544] INFO [werkzeug._log:187] [33mPress CTRL+C to quit[0m
+[2026-01-06 01:03:35,547] INFO [werkzeug._log:187]  * Restarting with stat
+[2026-01-06 01:03:36,303] INFO [app.setup_logging:60] Application starting in unknown mode
+[2026-01-06 01:03:36,303] INFO [app.setup_logging:61] Log level: INFO
+[2026-01-06 01:03:39,727] INFO [app.create_app:111] Application initialized successfully
+[2026-01-06 01:03:39,732] WARNING [werkzeug._log:187]  * Debugger is active!
+[2026-01-06 01:03:39,734] INFO [werkzeug._log:187]  * Debugger PIN: 442-375-808
+[2026-01-06 01:04:19,896] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:04:19] "GET /register HTTP/1.1" 200 -
+[2026-01-06 01:04:20,004] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:04:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:04:20,099] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:04:20] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2026-01-06 01:04:20,170] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:04:20,277] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:04:20] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:05:28,790] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:05:28] "[32mPOST /register HTTP/1.1[0m" 302 -
+[2026-01-06 01:05:28,850] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:05:28] "GET /login HTTP/1.1" 200 -
+[2026-01-06 01:05:28,933] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:05:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:05:29,057] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:05:29,111] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:05:29] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:05:52,047] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:05:52] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2026-01-06 01:05:52,074] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:05:52] "GET / HTTP/1.1" 200 -
+[2026-01-06 01:05:52,109] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:05:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:05:52,167] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:05:52,214] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:05:52] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:05:57,238] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:05:57] "GET /search_patients HTTP/1.1" 200 -
+[2026-01-06 01:05:57,263] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:05:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:05:57,326] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:05:57,386] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:05:57] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:06:51,569] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:06:51] "POST /search_patients HTTP/1.1" 200 -
+[2026-01-06 01:06:51,605] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:06:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:06:51,610] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:06:51] "GET /static/uploads/7d4a4873-89db-4d4b-be98-bfa87bee642a_webcam_capture.jpg HTTP/1.1" 200 -
+[2026-01-06 01:06:51,693] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:06:51,750] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:06:51] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:07:00,410] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:07:00] "GET / HTTP/1.1" 200 -
+[2026-01-06 01:07:00,449] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:07:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:07:00,549] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:07:00,597] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:07:00] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:07:09,241] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:07:09] "GET /search_patients HTTP/1.1" 200 -
+[2026-01-06 01:07:09,267] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:07:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:07:09,313] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:07:09,361] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:07:09] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:07:30,736] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:07:30] "POST /search_patients HTTP/1.1" 200 -
+[2026-01-06 01:07:30,782] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:07:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:07:30,802] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:07:30] "[36mGET /static/uploads/7d4a4873-89db-4d4b-be98-bfa87bee642a_webcam_capture.jpg HTTP/1.1[0m" 304 -
+[2026-01-06 01:07:30,894] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:07:30,942] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:07:30] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:07:38,145] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:07:38] "GET / HTTP/1.1" 200 -
+[2026-01-06 01:07:38,184] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:07:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:07:38,292] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:07:38,349] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:07:38] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:07:41,587] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:07:41] "GET /search_patients HTTP/1.1" 200 -
+[2026-01-06 01:07:41,624] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:07:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:07:41,658] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:07:41,712] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:07:41] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:08:30,452] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:08:30] "POST /search_patients HTTP/1.1" 200 -
+[2026-01-06 01:08:30,488] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:08:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:08:30,512] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:08:30] "[36mGET /static/uploads/7d4a4873-89db-4d4b-be98-bfa87bee642a_webcam_capture.jpg HTTP/1.1[0m" 304 -
+[2026-01-06 01:08:30,600] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:08:30,655] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:08:30] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:15:33,976] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:15:33] "GET /search_patients HTTP/1.1" 200 -
+[2026-01-06 01:15:34,994] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:15:35,693] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:15:35] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:15:37,010] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:15:37,374] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:15:37] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:15:40,231] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:15:40] "GET /chat.html HTTP/1.1" 200 -
+[2026-01-06 01:15:40,286] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:15:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:15:40,565] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:15:40,808] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:15:40] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:15:57,336] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:15:57] "POST /chat HTTP/1.1" 200 -
+[2026-01-06 01:16:04,076] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:16:04] "POST /chat HTTP/1.1" 200 -
+[2026-01-06 01:16:21,879] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:16:21] "POST /chat HTTP/1.1" 200 -
+[2026-01-06 01:16:44,348] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:16:44] "POST /chat HTTP/1.1" 200 -
+[2026-01-06 01:16:59,851] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:16:59] "POST /chat HTTP/1.1" 200 -
+[2026-01-06 01:17:37,921] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:17:37] "GET / HTTP/1.1" 200 -
+[2026-01-06 01:17:38,013] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:17:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:17:38,136] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:17:38,226] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:17:38] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:24:51,269] INFO [app.setup_logging:60] Application starting in unknown mode
+[2026-01-06 01:24:51,270] INFO [app.setup_logging:61] Log level: INFO
+[2026-01-06 01:25:10,213] INFO [app.create_app:111] Application initialized successfully
+[2026-01-06 01:25:10,291] INFO [werkzeug._log:187] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.251.151:5000
+[2026-01-06 01:25:10,293] INFO [werkzeug._log:187] [33mPress CTRL+C to quit[0m
+[2026-01-06 01:25:10,300] INFO [werkzeug._log:187]  * Restarting with stat
+[2026-01-06 01:25:13,330] INFO [app.setup_logging:60] Application starting in unknown mode
+[2026-01-06 01:25:13,331] INFO [app.setup_logging:61] Log level: INFO
+[2026-01-06 01:25:17,916] INFO [app.create_app:111] Application initialized successfully
+[2026-01-06 01:25:17,928] WARNING [werkzeug._log:187]  * Debugger is active!
+[2026-01-06 01:25:17,931] INFO [werkzeug._log:187]  * Debugger PIN: 442-375-808
+[2026-01-06 01:25:48,300] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:48] "GET / HTTP/1.1" 200 -
+[2026-01-06 01:25:48,396] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:25:48,465] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:48] "[36mGET /static/images/doctor_team_bg.png HTTP/1.1[0m" 304 -
+[2026-01-06 01:25:48,613] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:25:48,690] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:48] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:25:53,034] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:53] "GET / HTTP/1.1" 200 -
+[2026-01-06 01:25:53,058] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:25:53,139] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:25:53,200] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:53] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:25:53,850] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:53] "GET / HTTP/1.1" 200 -
+[2026-01-06 01:25:53,873] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:25:53,955] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:25:54,053] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:54] "GET / HTTP/1.1" 200 -
+[2026-01-06 01:25:54,116] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:25:54,135] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:54] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:25:54,195] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:25:54,315] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:54] "GET / HTTP/1.1" 200 -
+[2026-01-06 01:25:54,335] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:54] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:25:54,386] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:25:54,447] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:25:54,519] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:54] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:25:54,583] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:54] "GET / HTTP/1.1" 200 -
+[2026-01-06 01:25:54,615] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:25:54,681] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:25:54,762] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:54] "GET / HTTP/1.1" 200 -
+[2026-01-06 01:25:54,799] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:54] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:25:54,810] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:25:54,891] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:25:54,928] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:54] "GET / HTTP/1.1" 200 -
+[2026-01-06 01:25:54,963] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:25:54,969] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:54] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:25:55,024] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:25:55,079] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:55] "GET / HTTP/1.1" 200 -
+[2026-01-06 01:25:55,117] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:55] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:25:55,125] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:25:55,229] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:25:55,286] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:55] "GET / HTTP/1.1" 200 -
+[2026-01-06 01:25:55,337] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:25:55,428] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:55] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:25:55,479] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:25:55,570] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:55] "GET / HTTP/1.1" 200 -
+[2026-01-06 01:25:55,635] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:25:55,666] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:55] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:25:55,697] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:25:55,787] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:55] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:25:55,794] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:55] "GET / HTTP/1.1" 200 -
+[2026-01-06 01:25:55,831] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:25:55,885] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:25:58,336] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:58] "GET / HTTP/1.1" 200 -
+[2026-01-06 01:25:58,347] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:58] "GET / HTTP/1.1" 200 -
+[2026-01-06 01:25:58,381] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:25:58,396] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:58] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:25:58,454] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:25:58,512] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:25:58] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:26:16,147] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:26:16] "GET /?lang=es HTTP/1.1" 200 -
+[2026-01-06 01:26:16,195] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:26:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:26:16,291] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:26:16,467] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:26:16] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:26:20,075] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:26:20] "GET /chat.html HTTP/1.1" 200 -
+[2026-01-06 01:26:20,109] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:26:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-01-06 01:26:20,177] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:26:20,272] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:26:20] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:26:29,424] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:26:29] "POST /chat HTTP/1.1" 200 -
+[2026-01-06 01:27:00,403] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:27:00] "POST /chat HTTP/1.1" 200 -
+[2026-01-06 01:27:12,142] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:27:12,190] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:27:12] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2026-01-06 01:33:48,421] WARNING [app.not_found_error:87] 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2026-01-06 01:33:48,597] INFO [werkzeug._log:187] 127.0.0.1 - - [06/Jan/2026 01:33:48] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -

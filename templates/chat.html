@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+
+{% block title %}AI Chat{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="text-center">Chat with AJ3 AI</h2>
+                </div>
+                <div class="card-body">
+                    <div id="chat-messages" class="mb-3"
+                        style="height: 400px; overflow-y: auto; border: 1px solid #ccc; padding: 10px;">
+                        <!-- Messages will be appended here -->
+                    </div>
+                    <form id="chat-form">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+                        <button class="btn btn-outline-secondary" type="button" id="mic-btn" title="Speak">
+                            <i class="fas fa-microphone"></i>
+                        </button>
+                        <input type="text" class="form-control" id="message" name="message"
+                            placeholder="Type your message..." required>
+                        <button type="button" class="btn btn-outline-success" id="voice-toggle"
+                            title="Toggle Voice Output">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+    // Voice Configuration
+    const synth = window.speechSynthesis;
+    let recognition = null;
+    let isSpeakingEnabled = true;
+
+    // Initialize Speech Recognition
+    if ('webkitSpeechRecognition' in window) {
+        recognition = new webkitSpeechRecognition();
+        recognition.continuous = false;
+        recognition.lang = 'en-US';
+        recognition.interimResults = false;
+
+        recognition.onstart = function () {
+            document.getElementById('mic-btn').classList.add('btn-danger', 'element-pulse');
+            document.getElementById('mic-btn').classList.remove('btn-outline-secondary');
+        };
+
+        recognition.onend = function () {
+            document.getElementById('mic-btn').classList.remove('btn-danger', 'element-pulse');
+            document.getElementById('mic-btn').classList.add('btn-outline-secondary');
+        };
+
+        recognition.onresult = function (event) {
+            const transcript = event.results[0][0].transcript;
+            document.getElementById('message').value = transcript;
+            // Optional: Auto-submit
+            // document.getElementById('chat-form').dispatchEvent(new Event('submit'));
+        };
+    } else {
+        alert("Voice input not supported in this browser. Please use Chrome.");
+    }
+
+    // Toggle Voice Output
+    document.getElementById('voice-toggle').addEventListener('click', function () {
+        isSpeakingEnabled = !isSpeakingEnabled;
+        const icon = this.querySelector('i');
+        if (isSpeakingEnabled) {
+            this.classList.replace('btn-outline-danger', 'btn-outline-success');
+            icon.classList.replace('fa-volume-mute', 'fa-volume-up');
+        } else {
+            this.classList.replace('btn-outline-success', 'btn-outline-danger');
+            icon.classList.replace('fa-volume-up', 'fa-volume-mute');
+            synth.cancel();
+        }
+    });
+
+    document.getElementById('mic-btn').addEventListener('click', function () {
+        if (recognition) {
+            recognition.start();
+        }
+    });
+
+    function speakText(text) {
+        if (!isSpeakingEnabled) return;
+
+        // Strip markdown for smoother reading
+        const cleanText = text.replace(/[*#_`]/g, '');
+
+        const utterance = new SpeechSynthesisUtterance(cleanText);
+        utterance.rate = 1.0;
+        utterance.pitch = 1.0;
+
+        // Select a good voice if available
+        const voices = synth.getVoices();
+        const preferredVoice = voices.find(v => v.name.includes('Google US English')) || voices[0];
+        if (preferredVoice) utterance.voice = preferredVoice;
+
+        synth.speak(utterance);
+    }
+
+    document.getElementById('chat-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const message = document.getElementById('message').value;
+        if (message.trim() === '') return;
+
+        // Add user message
+        const chatMessages = document.getElementById('chat-messages');
+        chatMessages.innerHTML += '<div class="mb-2"><strong>You:</strong> ' + message + '</div>';
+        document.getElementById('message').value = '';
+
+        // Send to server
+        const csrfToken = document.querySelector('input[name="csrf_token"]').value;
+        const body = `message=${encodeURIComponent(message)}&csrf_token=${encodeURIComponent(csrfToken)}`;
+
+        fetch('/chat', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'X-CSRFToken': csrfToken
+            },
+            body: body
+        })
+            .then(response => response.json())
+            .then(data => {
+                var md = window.markdownit();
+                let msg = '<div class="mb-2"><strong>AJ3:</strong> ' + md.render(data.response) + '</div>';
+
+                // Handle matches
+                if (data.matches && data.matches.length > 0) {
+                    msg += '<div class="card my-2 border-primary"><div class="card-header bg-primary text-white p-1 ps-2"><small>Analysis Results</small></div><ul class="list-group list-group-flush">';
+                    data.matches.forEach(m => {
+                        msg += `<li class="list-group-item p-2">
+                     <div class="d-flex justify-content-between align-items-center">
+                        <strong>${m.name}</strong>
+                        <span class="badge bg-success rounded-pill">${Math.round(m.probability * 100)}%</span>
+                     </div>
+                     <small class="text-muted d-block mt-1">${m.precautions || 'No specific precautions listed.'}</small>
+                 </li>`;
+                    });
+                    msg += '</ul></div>';
+                }
+
+                chatMessages.innerHTML += msg;
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+
+                // Speak Response
+                speakText(data.response);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                chatMessages.innerHTML += '<div class="mb-2 text-danger"><strong>Error:</strong> Failed to get response.</div>';
+            });
+    });
+</script>
+{% endblock %}

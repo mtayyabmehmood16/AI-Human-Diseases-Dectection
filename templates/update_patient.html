@@ -1,0 +1,438 @@
+{% extends "base.html" %}
+
+{% block title %}Update Patient Profile - Disease Matcher{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <div class="card shadow-sm">
+            <div class="card-header bg-warning text-white">
+                <h5 class="mb-0"><i class="fas fa-edit"></i> Update Patient Profile</h5>
+            </div>
+            <div class="card-body">
+                <h6>Patient: {{ patient.name }} (ID: {{ patient.id }})</h6>
+                <p><strong>Age:</strong> {{ patient.age }}</p>
+                <p><strong>Address:</strong> {{ patient.address or 'N/A' }}</p>
+
+                <div class="mb-3">
+                    <a href="{{ url_for('patients.download_report', patient_id=patient.id) }}"
+                        class="btn btn-outline-danger btn-sm">
+                        <i class="fas fa-file-pdf"></i> Download Medical Report
+                    </a>
+                </div>
+
+                <!-- AI Risk Analysis Section -->
+                {% if risks %}
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-danger text-white">
+                        <h6 class="mb-0"><i class="fas fa-heartbeat"></i> AI Risk Assessment</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            {% for risk in risks %}
+                            <div class="col-md-6 mb-2">
+                                <div
+                                    class="card h-100 border-{{ 'danger' if risk.risk_level == 'High' else 'warning' }}">
+                                    <div class="card-body p-2">
+                                        <h6
+                                            class="card-title text-{{ 'danger' if risk.risk_level == 'High' else 'warning' }} mb-1">
+                                            {{ risk.condition }}
+                                        </h6>
+                                        <small class="card-text d-block">{{ risk.message }}</small>
+                                        <div class="progress mt-1" style="height: 5px;">
+                                            <div class="progress-bar bg-{{ 'danger' if risk.risk_level == 'High' else 'warning' }}"
+                                                role="progressbar" style="width: {{ risk.probability }}%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+
+                <div class="card mt-3 mb-3">
+                    <div class="card-header bg-light">
+                        <h6 class="mb-0">Medical Summary</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <strong>Diseases:</strong> {{ patient.diseases|length if patient.diseases else 0 }}
+                            </div>
+                            <div class="col-md-3">
+                                <strong>Visits:</strong> {{ patient.visits|length if patient.visits else 0 }}
+                            </div>
+                            <div class="col-md-3">
+                                <strong>Appointments:</strong> {{ patient.appointments|length if patient.appointments
+                                else 0 }}
+                            </div>
+                            <div class="col-md-3">
+                                <strong>Prescriptions:</strong> {{ patient.prescriptions|length if patient.prescriptions
+                                else 0 }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {% if patient.diseases %}
+                <p><strong>Diseases:</strong>
+                    {% for disease in patient.diseases %}
+                    {% if disease.name %}
+                    {{ disease.name }} (added {{ disease.added_date[:10] }})
+                    {% else %}
+                    {{ disease }}
+                    {% endif %}
+                    {% if not loop.last %}, {% endif %}
+                    {% endfor %}
+                </p>
+                {% else %}
+                <p><strong>Diseases:</strong> None recorded</p>
+                {% endif %}
+                {% if patient.visits %}
+                <p><strong>Visits:</strong> {{ patient.visits|length }}</p>
+                <ul>
+                    {% for visit in patient.visits %}
+                    <li>{{ visit.date }} at {{ visit.time }} {% if visit.notes %}- {{ visit.notes }}{% endif %}</li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                <p><strong>Visits:</strong> None recorded</p>
+                {% endif %}
+
+                {% if patient.appointments %}
+                <p><strong>Appointments:</strong> {{ patient.appointments|length }}</p>
+                <ul>
+                    {% for appt in patient.appointments %}
+                    <li>{{ appt.date }} at {{ appt.time }} - {{ appt.purpose }}</li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                <p><strong>Appointments:</strong> None scheduled</p>
+                {% endif %}
+
+                {% if patient.prescriptions %}
+                <p><strong>Prescriptions:</strong> {{ patient.prescriptions|length }}</p>
+                <ul>
+                    {% for presc in patient.prescriptions %}
+                    <li>{{ presc.medication }} - {{ presc.dosage }} for {{ presc.duration }} {% if presc.notes %}- {{
+                        presc.notes }}{% endif %}</li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                <p><strong>Prescriptions:</strong> None recorded</p>
+                {% endif %}
+
+                {% if patient.lab_tests %}
+                <p><strong>Lab Tests:</strong> {{ patient.lab_tests|length }}</p>
+                <ul>
+                    {% for test in patient.lab_tests %}
+                    <li>{{ test.name }} on {{ test.date }} {% if test.notes %}- {{ test.notes }}{% endif %}</li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                <p><strong>Lab Tests:</strong> None ordered</p>
+                {% endif %}
+
+                <hr>
+
+                <form method="post">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                    <div class="mb-3">
+                        <label for="action" class="form-label">What would you like to do?</label>
+                        <select class="form-select" id="action" name="action" required>
+                            <option value="">Select an action</option>
+                            <option value="update_basic">Update Basic Details</option>
+                            <option value="add_disease">Add Disease</option>
+                            <option value="add_visit">Add Visit</option>
+                            <option value="add_appointment">Schedule Appointment</option>
+                            <option value="add_prescription">Add Prescription</option>
+                            <option value="add_lab_test">Order Lab Test</option>
+                        </select>
+                    </div>
+
+                    <div id="basic_section" style="display:none;">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name *</label>
+                            <input type="text" class="form-control" id="name" name="name" value="{{ patient.name }}"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="age" class="form-label">Age *</label>
+                            <input type="number" class="form-control" id="age" name="age" value="{{ patient.age }}"
+                                min="1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <textarea class="form-control" id="address" name="address"
+                                rows="3">{{ patient.address or '' }}</textarea>
+                        </div>
+                    </div>
+
+                    <div id="disease_section" style="display:none;">
+                        <div class="mb-3">
+                            <label for="disease" class="form-label">Disease Name</label>
+                            <input type="text" class="form-control" id="disease" name="disease" placeholder="e.g., Flu">
+                        </div>
+                    </div>
+
+                    <div id="visit_section" style="display:none;">
+                        <div class="mb-3">
+                            <label for="visit_date" class="form-label">Visit Date</label>
+                            <input type="date" class="form-control" id="visit_date" name="visit_date" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="visit_time" class="form-label">Visit Time</label>
+                            <input type="time" class="form-control" id="visit_time" name="visit_time" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="visit_notes" class="form-label">Notes (optional)</label>
+                            <div class="input-group">
+                                <textarea class="form-control" id="visit_notes" name="visit_notes" rows="2"
+                                    placeholder="Additional notes about the visit"></textarea>
+                                <button class="btn btn-outline-secondary" type="button" id="recordBtn"
+                                    title="Speak Notes">
+                                    <i class="fas fa-microphone"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        const recordBtn = document.getElementById('recordBtn');
+                        const notesArea = document.getElementById('visit_notes');
+                        let isRecording = false;
+                        let mediaRecorder;
+                        let audioChunks = [];
+
+                        if (recordBtn) {
+                            recordBtn.addEventListener('click', async () => {
+                                if (!isRecording) {
+                                    // Start
+                                    try {
+                                        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                                        mediaRecorder = new MediaRecorder(stream);
+                                        audioChunks = [];
+
+                                        mediaRecorder.ondataavailable = event => {
+                                            audioChunks.push(event.data);
+                                        };
+
+                                        mediaRecorder.onstop = async () => {
+                                            const audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
+                                            const formData = new FormData();
+                                            formData.append('audio', audioBlob);
+
+                                            recordBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+
+                                            try {
+                                                const response = await fetch("{{ url_for('main.transcribe_audio') }}", {
+                                                    method: 'POST',
+                                                    body: formData
+                                                });
+                                                const data = await response.json();
+                                                if (data.text) {
+                                                    const current = notesArea.value;
+                                                    notesArea.value = current ? current + " " + data.text : data.text;
+                                                } else {
+                                                    alert('Could not transcribe: ' + (data.error || 'Unknown error'));
+                                                }
+                                            } catch (err) {
+                                                console.error(err);
+                                                alert('Error connecting to server.');
+                                            }
+
+                                            recordBtn.innerHTML = '<i class="fas fa-microphone"></i>';
+                                            recordBtn.classList.remove('btn-danger');
+                                            recordBtn.classList.add('btn-outline-secondary');
+                                        };
+
+                                        mediaRecorder.start();
+                                        isRecording = true;
+                                        recordBtn.innerHTML = '<i class="fas fa-stop"></i>';
+                                        recordBtn.classList.remove('btn-outline-secondary');
+                                        recordBtn.classList.add('btn-danger');
+
+                                    } catch (err) {
+                                        alert('Microphone access denied or not supported.');
+                                    }
+                                } else {
+                                    // Stop
+                                    mediaRecorder.stop();
+                                    isRecording = false;
+                                }
+                            });
+                        }
+                    </script>
+
+
+                    <div id="appointment_section" style="display:none;">
+                        <div class="mb-3">
+                            <label for="appt_date" class="form-label">Appointment Date</label>
+                            <input type="date" class="form-control" id="appt_date" name="appt_date" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="appt_time" class="form-label">Appointment Time</label>
+                            <input type="time" class="form-control" id="appt_time" name="appt_time" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="appt_purpose" class="form-label">Purpose</label>
+                            <input type="text" class="form-control" id="appt_purpose" name="appt_purpose"
+                                placeholder="e.g., Follow-up checkup">
+                        </div>
+                    </div>
+
+                    <div id="prescription_section" style="display:none;">
+                        <div class="mb-3">
+                            <label for="medication" class="form-label">Medication Name</label>
+                            <input type="text" class="form-control" id="medication" name="medication"
+                                placeholder="e.g., Aspirin 100mg" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="dosage" class="form-label">Dosage</label>
+                            <input type="text" class="form-control" id="dosage" name="dosage"
+                                placeholder="e.g., 1 tablet twice daily" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="duration" class="form-label">Duration</label>
+                            <input type="text" class="form-control" id="duration" name="duration"
+                                placeholder="e.g., 7 days" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="prescription_notes" class="form-label">Notes (optional)</label>
+                            <textarea class="form-control" id="prescription_notes" name="prescription_notes" rows="2"
+                                placeholder="Additional instructions"></textarea>
+                        </div>
+                    </div>
+
+                    <div id="lab_test_section" style="display:none;">
+                        <div class="mb-3">
+                            <label for="test_name" class="form-label">Test Name</label>
+                            <input type="text" class="form-control" id="test_name" name="test_name"
+                                placeholder="e.g., Blood Test" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="test_date" class="form-label">Test Date</label>
+                            <input type="date" class="form-control" id="test_date" name="test_date" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="test_notes" class="form-label">Notes (optional)</label>
+                            <textarea class="form-control" id="test_notes" name="test_notes" rows="2"
+                                placeholder="Special instructions"></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-warning"><i class="fas fa-save"></i> Update Profile</button>
+                    <a href="{{ url_for('patients.search_patients') }}" class="btn btn-secondary"><i
+                            class="fas fa-arrow-left"></i> Back to Search</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('action').addEventListener('change', function () {
+        const action = this.value;
+        document.getElementById('basic_section').style.display = action === 'update_basic' ? 'block' : 'none';
+        document.getElementById('disease_section').style.display = action === 'add_disease' ? 'block' : 'none';
+        document.getElementById('visit_section').style.display = action === 'add_visit' ? 'block' : 'none';
+        document.getElementById('appointment_section').style.display = action === 'add_appointment' ? 'block' : 'none';
+        document.getElementById('prescription_section').style.display = action === 'add_prescription' ? 'block' : 'none';
+        document.getElementById('lab_test_section').style.display = action === 'add_lab_test' ? 'block' : 'none';
+        if (action === 'update_basic') {
+            document.getElementById('name').required = true;
+            document.getElementById('age').required = true;
+            document.getElementById('disease').required = false;
+            document.getElementById('visit_date').required = false;
+            document.getElementById('visit_time').required = false;
+            document.getElementById('appt_date').required = false;
+            document.getElementById('appt_time').required = false;
+            document.getElementById('medication').required = false;
+            document.getElementById('dosage').required = false;
+            document.getElementById('duration').required = false;
+            document.getElementById('test_name').required = false;
+            document.getElementById('test_date').required = false;
+        } else if (action === 'add_disease') {
+            document.getElementById('name').required = false;
+            document.getElementById('age').required = false;
+            document.getElementById('disease').required = true;
+            document.getElementById('visit_date').required = false;
+            document.getElementById('visit_time').required = false;
+            document.getElementById('appt_date').required = false;
+            document.getElementById('appt_time').required = false;
+            document.getElementById('medication').required = false;
+            document.getElementById('dosage').required = false;
+            document.getElementById('duration').required = false;
+            document.getElementById('test_name').required = false;
+            document.getElementById('test_date').required = false;
+        } else if (action === 'add_visit') {
+            document.getElementById('name').required = false;
+            document.getElementById('age').required = false;
+            document.getElementById('disease').required = false;
+            document.getElementById('visit_date').required = true;
+            document.getElementById('visit_time').required = true;
+            document.getElementById('appt_date').required = false;
+            document.getElementById('appt_time').required = false;
+            document.getElementById('medication').required = false;
+            document.getElementById('dosage').required = false;
+            document.getElementById('duration').required = false;
+            document.getElementById('test_name').required = false;
+            document.getElementById('test_date').required = false;
+        } else if (action === 'add_appointment') {
+            document.getElementById('name').required = false;
+            document.getElementById('age').required = false;
+            document.getElementById('disease').required = false;
+            document.getElementById('visit_date').required = false;
+            document.getElementById('visit_time').required = false;
+            document.getElementById('appt_date').required = true;
+            document.getElementById('appt_time').required = true;
+            document.getElementById('medication').required = false;
+            document.getElementById('dosage').required = false;
+            document.getElementById('duration').required = false;
+            document.getElementById('test_name').required = false;
+            document.getElementById('test_date').required = false;
+        } else if (action === 'add_prescription') {
+            document.getElementById('name').required = false;
+            document.getElementById('age').required = false;
+            document.getElementById('disease').required = false;
+            document.getElementById('visit_date').required = false;
+            document.getElementById('visit_time').required = false;
+            document.getElementById('appt_date').required = false;
+            document.getElementById('appt_time').required = false;
+            document.getElementById('medication').required = true;
+            document.getElementById('dosage').required = true;
+            document.getElementById('duration').required = true;
+            document.getElementById('test_name').required = false;
+            document.getElementById('test_date').required = false;
+        } else if (action === 'add_lab_test') {
+            document.getElementById('name').required = false;
+            document.getElementById('age').required = false;
+            document.getElementById('disease').required = false;
+            document.getElementById('visit_date').required = false;
+            document.getElementById('visit_time').required = false;
+            document.getElementById('appt_date').required = false;
+            document.getElementById('appt_time').required = false;
+            document.getElementById('medication').required = false;
+            document.getElementById('dosage').required = false;
+            document.getElementById('duration').required = false;
+            document.getElementById('test_name').required = true;
+            document.getElementById('test_date').required = true;
+        } else {
+            document.getElementById('name').required = false;
+            document.getElementById('age').required = false;
+            document.getElementById('disease').required = false;
+            document.getElementById('visit_date').required = false;
+            document.getElementById('visit_time').required = false;
+            document.getElementById('appt_date').required = false;
+            document.getElementById('appt_time').required = false;
+            document.getElementById('medication').required = false;
+            document.getElementById('dosage').required = false;
+            document.getElementById('duration').required = false;
+            document.getElementById('test_name').required = false;
+            document.getElementById('test_date').required = false;
+        }
+    });
+</script>
+{% endblock %}

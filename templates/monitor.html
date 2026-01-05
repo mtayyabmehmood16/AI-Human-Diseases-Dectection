@@ -1,0 +1,410 @@
+{% extends "base.html" %}
+
+{% block title %}AI Vital Pulse - Advanced Biometrics{% endblock %}
+
+{% block content %}
+<div class="container-fluid py-4">
+    <!-- Header -->
+    <div class="row mb-4">
+        <div class="col-12 text-center">
+            <h2 class="fw-bold text-primary"><i class="fas fa-heartbeat text-danger"></i> AI Vital Scanner</h2>
+            <p class="text-muted">Real-time photoplethysmography with Facial Tracking & Stress Analysis</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Left Column: Video Feed -->
+        <div class="col-lg-7 mb-4">
+            <div class="card shadow-lg border-0 h-100">
+                <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                    <span><i class="fas fa-camera"></i> Live Feed</span>
+                    <span id="tracker-status" class="badge bg-warning text-dark">Initializing Camera...</span>
+                </div>
+                <div class="card-body p-0 position-relative bg-black d-flex justify-content-center align-items-center"
+                    style="min-height: 480px;">
+                    <!-- Video & Canvas Overlay -->
+                    <div class="position-relative">
+                        <video id="video" width="640" height="480" autoplay muted playsinline
+                            style="transform: scaleX(-1); max-width: 100%; height: auto; border-radius: 8px;"></video>
+                        <canvas id="overlay" width="640" height="480"
+                            style="position: absolute; top: 0; left: 0; transform: scaleX(-1); max-width: 100%; height: auto;"></canvas>
+                    </div>
+                </div>
+                <div class="card-footer bg-light">
+                    <div class="d-flex justify-content-between">
+                        <button id="start-btn" class="btn btn-primary px-4"><i class="fas fa-play"></i> Start
+                            Scan</button>
+                        <button id="reset-btn" class="btn btn-outline-secondary"><i class="fas fa-sync"></i>
+                            Recalibrate</button>
+                    </div>
+                    <small class="text-muted mt-2 d-block">
+                        <i class="fas fa-info-circle"></i> ensuring good lighting. Keep your head still. The AI will
+                        lock onto your forehead.
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column: Vitals Dashboard -->
+        <div class="col-lg-5 mb-4">
+            <div class="card shadow border-0 h-100 bg-gradient-light">
+                <div class="card-body">
+
+                    <!-- Main BPM Display -->
+                    <div class="text-center mb-5 mt-3 position-relative">
+                        <div id="heart-anim" class="heart-icon-container">
+                            <i class="fas fa-heart text-danger display-1 heart-beat"></i>
+                        </div>
+                        <h1 id="bpm-display" class="display-3 fw-bold mt-2">--</h1>
+                        <p class="text-muted text-uppercase letter-spacing-2">Beats Per Minute</p>
+                    </div>
+
+                    <hr class="my-4 op-2">
+
+                    <!-- Secondary Metrics -->
+                    <div class="row g-3 text-center">
+                        <div class="col-6">
+                            <div class="p-3 bg-white rounded shadow-sm border">
+                                <h6 class="text-muted mb-2">Signal Quality</h6>
+                                <div id="signal-badge" class="badge bg-secondary fs-6">Waiting</div>
+                                <div class="progress mt-2" style="height: 6px;">
+                                    <div id="snr-bar" class="progress-bar bg-success" role="progressbar"
+                                        style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-3 bg-white rounded shadow-sm border">
+                                <h6 class="text-muted mb-2">Stress Level</h6>
+                                <div id="stress-badge" class="badge bg-info fs-6">Analyzing</div>
+                                <div class="progress mt-2" style="height: 6px;">
+                                    <div id="stress-bar" class="progress-bar bg-danger" role="progressbar"
+                                        style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Graph -->
+                    <div class="mt-4">
+                        <h6 class="text-muted"><i class="fas fa-wave-square"></i> Pulse Wave</h6>
+                        <canvas id="signalChart" height="80"></canvas>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Custom CSS for Heartbeat -->
+<style>
+    .letter-spacing-2 {
+        letter-spacing: 2px;
+    }
+
+    .heart-icon-container {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.1s ease-out;
+    }
+
+    /* Dynamic class added via JS directly for more control, but here is a fallback pulse */
+    @keyframes pulse-idle {
+        0% {
+            transform: scale(1);
+            opacity: 0.8;
+        }
+
+        50% {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 0.8;
+        }
+    }
+
+    .heart-beat-idle {
+        animation: pulse-idle 2s infinite ease-in-out;
+    }
+</style>
+
+<!-- Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- clmtrackr for Face Tracking -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clmtrackr/1.1.2/clmtrackr.min.js"></script>
+
+<script>
+    // --- Configuration ---
+    const CONF = {
+        scan_fps: 30,
+        fft_size: 256,
+        confidence_threshold: 0.4, // for face tracker
+        roi_size: 40, // pixels
+        min_bpm: 45,
+        max_bpm: 210
+    };
+
+    // --- DOM Elements ---
+    const video = document.getElementById('video');
+    const overlay = document.getElementById('overlay');
+    const overlayCtx = overlay.getContext('2d');
+    const bpmDisplay = document.getElementById('bpm-display');
+    const heartIcon = document.querySelector('.heart-beat');
+    const signalBadge = document.getElementById('signal-badge');
+    const snrBar = document.getElementById('snr-bar');
+    const stressBadge = document.getElementById('stress-badge');
+    const trackerStatus = document.getElementById('tracker-status');
+
+    // --- Chart Setup ---
+    const chartCtx = document.getElementById('signalChart').getContext('2d');
+    const chart = new Chart(chartCtx, {
+        type: 'line',
+        data: {
+            labels: Array(100).fill(''),
+            datasets: [{
+                data: Array(100).fill(0),
+                borderColor: '#dc3545',
+                borderWidth: 2,
+                tension: 0.4,
+                pointRadius: 0
+            }]
+        },
+        options: {
+            responsive: true,
+            animation: false,
+            plugins: { legend: { display: false } },
+            scales: { x: { display: false }, y: { display: false } }
+        }
+    });
+
+    // --- State Variables ---
+    let ctracker = new clm.tracker();
+    let isTracking = false;
+    let signalBuffer = [];
+    let pulseHistory = []; // For BPM smoothing
+
+    // --- Filters & Math ---
+    class BandpassFilter {
+        constructor() {
+            // Butterworth 0.7 - 4.0 Hz (approx 42 - 240 BPM)
+            this.b = [0.045, 0, -0.09, 0, 0.045];
+            this.a = [1, -2.1, 1.8, -0.7, 0.2]; // Simplified coords for 30fps
+            this.x = new Array(5).fill(0);
+            this.y = new Array(5).fill(0);
+        }
+        process(val) {
+            this.x.pop(); this.x.unshift(val);
+            this.y.pop(); this.y.unshift(0);
+            let res = (this.b[0] * this.x[0] + this.b[2] * this.x[2] + this.b[4] * this.x[4])
+                - (this.a[1] * this.y[1] + this.a[2] * this.y[2] + this.a[3] * this.y[3] + this.a[4] * this.y[4]);
+            this.y[0] = res;
+            return res;
+        }
+    }
+    const filter = new BandpassFilter();
+
+    // --- Initialization ---
+    ctracker.init();
+
+    document.getElementById('start-btn').addEventListener('click', startCamera);
+    document.getElementById('reset-btn').addEventListener('click', () => location.reload()); // Simple reset
+
+    async function startCamera() {
+        try {
+            const stream = await navigator.mediaDevices.getUserMedia({ video: { width: 640, height: 480 } });
+            video.srcObject = stream;
+            video.play();
+
+            video.onloadedmetadata = () => {
+                ctracker.start(video);
+                isTracking = true;
+                trackerStatus.textContent = "Scanning Face...";
+                trackerStatus.className = "badge bg-info text-dark";
+                requestAnimationFrame(loop);
+            };
+        } catch (e) {
+            alert("Camera needed: " + e);
+        }
+    }
+
+    // --- Main Loop ---
+    let frameCount = 0;
+
+    function loop() {
+        if (!isTracking) return;
+        requestAnimationFrame(loop);
+
+        overlayCtx.clearRect(0, 0, 640, 480);
+
+        // 1. Get Face Positions
+        const positions = ctracker.getCurrentPosition();
+
+        if (positions) {
+            ctracker.draw(overlay);
+
+            // Calculate Forehead ROI
+            // Left Eyebrow: 19, Right Eyebrow: 22.
+            const x1 = positions[19][0];
+            const y1 = positions[19][1];
+            const x2 = positions[22][0];
+
+            // Center of forehead
+            const cx = (x1 + x2) / 2;
+            const cy = y1 - 35; // Move up 35px from eyebrows
+
+            // Draw ROI Box
+            overlayCtx.strokeStyle = "#00ff00";
+            overlayCtx.lineWidth = 2;
+            overlayCtx.strokeRect(cx - 20, cy - 20, 40, 40);
+
+            // Extract Green Channel
+            const tempC = document.createElement('canvas');
+            tempC.width = 640; tempC.height = 480;
+            const tCtx = tempC.getContext('2d');
+            tCtx.drawImage(video, 0, 0, 640, 480);
+
+            // Extract from cx, cy
+            const frame = tCtx.getImageData(Math.floor(cx - 10), Math.floor(cy - 10), 20, 20); // 20x20 sample
+            const data = frame.data;
+            let sumG = 0;
+            for (let i = 0; i < data.length; i += 4) {
+                sumG += data[i + 1]; // Green
+            }
+            const avgG = sumG / (data.length / 4);
+
+            processSignal(avgG);
+            trackerStatus.textContent = "Locked On";
+            trackerStatus.className = "badge bg-success";
+
+        } else {
+            trackerStatus.textContent = "Searching Face...";
+            trackerStatus.className = "badge bg-warning text-dark";
+        }
+    }
+
+    // --- Improved Signal Processing ---
+    // New State for Real-time analysis
+    let lastPeakTime = 0;
+    let ibiBuffer = []; // Inter-Beat Intervals
+    let stressHistory = []; // For smoothing stress score
+
+    function processSignal(val) {
+        // 1. Filter
+        const filtered = filter.process(val);
+
+        // 2. Buffer
+        signalBuffer.push(filtered);
+        if (signalBuffer.length > CONF.fft_size) signalBuffer.shift();
+
+        // 3. Update Chart
+        chart.data.datasets[0].data.shift();
+        chart.data.datasets[0].data.push(filtered);
+        if (frameCount % 2 === 0) chart.update('none');
+
+        // 4. Real-time Analysis
+        frameCount++;
+        analyzeRealTimeBeat(filtered);
+    }
+
+    function triggerHeartBeat() {
+        const h = document.getElementById('heart-anim');
+        h.style.transform = "scale(1.2)";
+        setTimeout(() => h.style.transform = "scale(1.0)", 150);
+    }
+
+    function analyzeRealTimeBeat(val) {
+        const now = performance.now();
+        const len = signalBuffer.length;
+        if (len < 5) return;
+
+        const center = signalBuffer[len - 2];
+        const left = signalBuffer[len - 3];
+        const right = signalBuffer[len - 1];
+
+        // Robust Peak Detector
+        if (center > left && center >= right && center > 0.05) {
+            // Refractory Period Check: 270ms
+            if (now - lastPeakTime > 270) {
+                const ibi = now - lastPeakTime;
+                lastPeakTime = now;
+
+                // Validate IBI (Range: 40bpm - 220bpm => 270ms < IBI < 1500ms)
+                if (ibi > 270 && ibi < 1500) {
+
+                    // 1. Intelligent Buffer Update (Outlier Rejection)
+                    let validIBI = true;
+                    if (ibiBuffer.length > 5) {
+                        const sorted = [...ibiBuffer].sort((a, b) => a - b);
+                        const median = sorted[Math.floor(sorted.length / 2)];
+                        // Reject if > 30% deviation from median (noise spike)
+                        if (Math.abs(ibi - median) > (median * 0.3)) {
+                            validIBI = false;
+                        }
+                    }
+
+                    if (validIBI) {
+                        ibiBuffer.push(ibi);
+                        if (ibiBuffer.length > 20) ibiBuffer.shift();
+
+                        // 2. Calculate BPM
+                        const sortedIBI = [...ibiBuffer].sort((a, b) => a - b);
+                        const medianIBI = sortedIBI[Math.floor(sortedIBI.length / 2)];
+                        const bpm = Math.round(60000 / medianIBI);
+
+                        bpmDisplay.innerText = bpm;
+                        triggerHeartBeat();
+
+                        // 3. Calculate Stress (RMSSD) with Smoothing
+                        if (ibiBuffer.length > 8) {
+                            let sumSqDiff = 0;
+                            for (let i = 1; i < ibiBuffer.length; i++) {
+                                const diff = ibiBuffer[i] - ibiBuffer[i - 1];
+                                sumSqDiff += diff * diff;
+                            }
+                            const rmssd = Math.sqrt(sumSqDiff / (ibiBuffer.length - 1));
+
+                            // Map RMSSD to Stress Score (0-100)
+                            // Increased sensitivity factor to 2.0 to capture subtle stress
+                            let stressRaw = 100 - (rmssd * 2.0);
+                            stressRaw = Math.max(0, Math.min(100, stressRaw));
+
+                            // Smooth the stress score
+                            stressHistory.push(stressRaw);
+                            if (stressHistory.length > 5) stressHistory.shift();
+                            const stressScore = Math.round(stressHistory.reduce((a, b) => a + b, 0) / stressHistory.length);
+
+                            const bar = document.getElementById('stress-bar');
+                            bar.style.width = stressScore + "%";
+
+                            const badge = document.getElementById('stress-badge');
+                            if (stressScore > 75) {
+                                badge.className = "badge bg-danger";
+                                badge.innerText = "High Stress";
+                            } else if (stressScore > 40) {
+                                badge.className = "badge bg-warning text-dark";
+                                badge.innerText = "Moderate";
+                            } else {
+                                badge.className = "badge bg-success";
+                                badge.innerText = "Relaxed";
+                            }
+                        }
+                    }
+
+                    // Signal Quality (Amplitude based)
+                    let amp = center;
+                    let quality = Math.min(100, amp * 80);
+                    snrBar.style.width = quality + "%";
+                    if (quality > 30) signalBadge.innerText = "Good"; else signalBadge.innerText = "Weak";
+                }
+            }
+        }
+    }
+
+</script>
+{% endblock %}

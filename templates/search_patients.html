@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+
+{% block title %}Search Patients - Disease Matcher{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <div class="card shadow-sm">
+            <div class="card-header bg-info text-white">
+                <h5 class="mb-0"><i class="fas fa-search"></i> Search Patients</h5>
+            </div>
+            <div class="card-body">
+                <form method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                    <div class="mb-3">
+                        <label for="query" class="form-label">Search by Name or ID</label>
+                        <input type="text" class="form-control" id="query" name="query"
+                            placeholder="Enter patient name or ID">
+                    </div>
+                    <div class="mb-3">
+                        <label for="image" class="form-label">Or Search by Image</label>
+                        <input type="file" class="form-control" id="image" name="image" accept="image/*"
+                            capture="environment">
+                        <div class="mt-2">
+                            <button type="button" class="btn btn-outline-info" id="capture-btn"><i
+                                    class="fas fa-camera"></i> Capture from Camera</button>
+                        </div>
+                        <video id="video" width="320" height="240" autoplay style="display:none;"></video>
+                        <canvas id="canvas" style="display:none;"></canvas>
+                    </div>
+                    <button type="submit" class="btn btn-info"><i class="fas fa-search"></i> Search</button>
+                </form>
+            </div>
+        </div>
+
+        {% if results %}
+        <h4 class="mt-4">Search Results:</h4>
+        {% for patient in results %}
+        <div class="card mb-3 shadow-sm">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h5>{{ patient.name }}</h5>
+                        <p><strong>ID:</strong> {{ patient.id }}</p>
+                        <p><strong>Age:</strong> {{ patient.age }}</p>
+                        <p><strong>Address:</strong> {{ patient.address or 'N/A' }}</p>
+                        {% if patient.diseases %}
+                        <p><strong>Diseases:</strong>
+                            {% for disease in patient.diseases %}
+                            {% if disease.name %}
+                            {{ disease.name }} (added {{ disease.added_date[:10] }})
+                            {% else %}
+                            {{ disease }}
+                            {% endif %}
+                            {% if not loop.last %}, {% endif %}
+                            {% endfor %}
+                        </p>
+                        {% endif %}
+                        {% if patient.visits %}
+                        <p><strong>Visits:</strong> {{ patient.visits|length }}</p>
+                        <ul>
+                            {% for visit in patient.visits %}
+                            <li>{{ visit.date }} at {{ visit.time }} {% if visit.notes %}- {{ visit.notes }}{% endif %}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+
+                        {% if patient.appointments %}
+                        <p><strong>Appointments:</strong> {{ patient.appointments|length }}</p>
+                        <ul>
+                            {% for appt in patient.appointments %}
+                            <li>{{ appt.date }} at {{ appt.time }} - {{ appt.purpose }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% else %}
+                        <p><strong>Appointments:</strong> None scheduled</p>
+                        {% endif %}
+
+                        {% if patient.prescriptions %}
+                        <p><strong>Prescriptions:</strong> {{ patient.prescriptions|length }}</p>
+                        <ul>
+                            {% for presc in patient.prescriptions %}
+                            <li>{{ presc.medication }} - {{ presc.dosage }} for {{ presc.duration }} {% if presc.notes
+                                %}- {{ presc.notes }}{% endif %}</li>
+                            {% endfor %}
+                        </ul>
+                        {% else %}
+                        <p><strong>Prescriptions:</strong> None recorded</p>
+                        {% endif %}
+
+                        {% if patient.lab_tests %}
+                        <p><strong>Lab Tests:</strong> {{ patient.lab_tests|length }}</p>
+                        <ul>
+                            {% for test in patient.lab_tests %}
+                            <li>{{ test.name }} on {{ test.date }} {% if test.notes %}- {{ test.notes }}{% endif %}</li>
+                            {% endfor %}
+                        </ul>
+                        {% else %}
+                        <p><strong>Lab Tests:</strong> None ordered</p>
+                        {% endif %}
+                    </div>
+                    <div class="col-md-4 text-center">
+                        {% if patient.image_path %}
+                        <img src="{{ url_for('static', filename='uploads/' ~ patient.image_path.replace('\\', '/').split('/')[-1]) }}"
+                            alt="Patient Photo" class="img-fluid rounded" style="max-height: 150px;">
+                        {% else %}
+                        <div class="text-muted p-3 border rounded">No Image Available</div>
+                        {% endif %}
+                        <br>
+                        <a href="{{ url_for('patients.update_patient', patient_id=patient.id) }}"
+                            class="btn btn-warning btn-sm mt-2"><i class="fas fa-edit"></i> Update Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        {% endif %}
+
+        <div class="text-center mt-3">
+            <a href="{{ url_for('main.index') }}" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to
+                Home</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('capture-btn').addEventListener('click', async () => {
+        const video = document.getElementById('video');
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        try {
+            const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+            video.srcObject = stream;
+            video.style.display = 'block';
+
+            // Wait for video to load
+            video.onloadedmetadata = () => {
+                canvas.width = video.videoWidth;
+                canvas.height = video.videoHeight;
+            };
+
+            // Capture on click again or add a capture button
+            document.getElementById('capture-btn').textContent = 'Capture';
+            document.getElementById('capture-btn').onclick = () => {
+                ctx.drawImage(video, 0, 0);
+                canvas.toBlob((blob) => {
+                    const file = new File([blob], 'captured.jpg', { type: 'image/jpeg' });
+                    const dataTransfer = new DataTransfer();
+                    dataTransfer.items.add(file);
+                    document.getElementById('image').files = dataTransfer.files;
+                    video.style.display = 'none';
+                    stream.getTracks().forEach(track => track.stop());
+                    document.getElementById('capture-btn').textContent = 'Capture from Camera';
+                    document.getElementById('capture-btn').onclick = () => { /* reset */ };
+                });
+            };
+        } catch (err) {
+            alert('Camera access denied or not available. Please upload an image file instead.');
+            console.error(err);
+        }
+    });
+</script>
+{% endblock %}
