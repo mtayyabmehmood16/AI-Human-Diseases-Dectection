@@ -1,4 +1,0 @@
-- [ ] Add before_request handler in app.py to block POST requests for non-authenticated users, excluding login, register, and static endpoints.
-- [ ] Remove @login_required decorator from /match route.
-- [ ] Remove @login_required decorator from /status route.
-- [ ] Test the application to ensure users can view pages without login but actions require login.
