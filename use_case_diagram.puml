@@ -1,0 +1,63 @@
+@startuml Use Case Diagram
+
+left to right direction
+actor "Patient" as P
+actor "Medical Staff" as S
+actor "Administrator" as A
+
+rectangle "AI Medical System" {
+  
+  package "Authentication" {
+    usecase "Register (Face)" as UC1
+    usecase "Login (Face/Creds)" as UC2
+    usecase "Logout" as UC3
+  }
+
+  package "Patient Features" {
+    usecase "View Medical Profile" as UC4
+    usecase "Check Symptoms (AI)" as UC5
+    usecase "Chat with Health Assistant" as UC6
+    usecase "Analyze Skin Condition" as UC7
+    usecase "Download Medical Report" as UC8
+  }
+
+  package "Staff Management" {
+    usecase "Search Patients" as UC9
+    usecase "Add New Patient" as UC10
+    usecase "Update Patient Record" as UC11
+    usecase "Prescribe Medication" as UC12
+    usecase "View Risk Analysis" as UC13
+  }
+
+  package "Administration" {
+    usecase "Manage Users" as UC14
+    usecase "View System Dashboard" as UC15
+    usecase "Bulk Delete Patients" as UC16
+  }
+}
+
+P --> UC2
+P --> UC4
+P --> UC5
+P --> UC6
+P --> UC7
+P --> UC8
+
+S --> UC2
+S --> UC9
+S --> UC10
+S --> UC11
+S --> UC12
+S --> UC13
+S --> UC8
+
+A --> UC2
+A --> UC14
+A --> UC15
+A --> UC16
+A --> UC9
+
+UC11 ..> UC12 : includes
+UC5 ..> UC6 : potentially extends
+
+@enduml

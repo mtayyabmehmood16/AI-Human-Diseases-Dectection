@@ -1,0 +1,132 @@
+[
+    {
+        "id": "b76b7db7-e544-444f-9871-bcd5c85f038c",
+        "name": "Ahmad Ejaz",
+        "age": "20",
+        "address": "hii",
+        "image": "static/uploads\\b76b7db7-e544-444f-9871-bcd5c85f038c_WIN_20251116_21_49_37_Pro.jpg",
+        "image_hash": "81c180000d3f67c7"
+    },
+    {
+        "id": "e5c7ab10-83e4-4a04-85b7-94ab49dd1eb0",
+        "name": "tttt",
+        "age": "12",
+        "address": "23",
+        "image": "static/uploads\\e5c7ab10-83e4-4a04-85b7-94ab49dd1eb0_captured.jpg",
+        "image_hash": "e0e1c7c707676301",
+        "visits": [
+            {
+                "date": "2025-11-13",
+                "time": "22:24",
+                "notes": "regular checkup"
+            }
+        ],
+        "diseases": [
+            "flu"
+        ]
+    },
+    {
+        "id": "7c816cee-e59b-4d27-b7a8-28fe5c623182",
+        "name": "Tayyab",
+        "age": "22",
+        "address": "Ahmad Hall Islamia University Bahawalpur",
+        "diseases": [
+            {
+                "name": "headache",
+                "added_date": "2025-11-16T23:05:26.993498"
+            }
+        ],
+        "visits": [],
+        "image": "static/uploads\\7c816cee-e59b-4d27-b7a8-28fe5c623182_captured.jpg",
+        "image_hash": "80c0e0e0f0e1e1c1"
+    },
+    {
+        "id": "27e306a6-1a0c-43c0-986a-d9ba4ab81d65",
+        "name": "sharjeel javed",
+        "age": "21",
+        "address": "bahawapur",
+        "diseases": [
+            {
+                "name": "aids",
+                "added_date": "2025-11-17T11:20:34.812689"
+            }
+        ],
+        "visits": [],
+        "image": "static/uploads\\27e306a6-1a0c-43c0-986a-d9ba4ab81d65_captured.jpg",
+        "image_hash": "ffffbf1707000000"
+    },
+    {
+        "id": "e72aac48-1810-4ce8-8c7f-30a7d76bab1c",
+        "name": "memo",
+        "age": "12",
+        "address": "swl",
+        "diseases": [
+            {
+                "name": "diabets",
+                "added_date": "2025-11-17T11:26:16.070718"
+            }
+        ],
+        "visits": [],
+        "image": "static/uploads\\e72aac48-1810-4ce8-8c7f-30a7d76bab1c_captured.jpg",
+        "image_hash": "0000006df3fff3fb"
+    },
+    {
+        "id": "22982f61-4d63-4b2f-bba4-faee234f32a6",
+        "name": "sharjeel javed",
+        "age": "21",
+        "address": "bwp",
+        "diseases": [
+            {
+                "name": "drug addict",
+                "added_date": "2025-11-17T11:29:13.440662"
+            }
+        ],
+        "visits": [],
+        "image": "static/uploads\\22982f61-4d63-4b2f-bba4-faee234f32a6_captured.jpg",
+        "image_hash": "8f97bf3f37030101"
+    },
+    {
+        "id": "1b04742a-f359-4824-8eb6-aa0482d7b89f",
+        "username": "testpatient",
+        "password_hash": "pbkdf2:sha256:600000$TrSFBVnMeiZ3iuNJ$619ca768cdf4d7818cbe0d4175fad49b557fa8e61d517b3cfefb770147108b93",
+        "name": "Test Patient",
+        "age": "30",
+        "address": "123 Test St",
+        "diseases": [],
+        "visits": [],
+        "role": "patient"
+    },
+    {
+        "id": "a1c37ff5-9675-4674-84e0-edde22827e80",
+        "username": "uzi",
+        "password_hash": "pbkdf2:sha256:600000$lLp0NE2ExKjqtxYs$942f02e5ce6e00e97dda36127315e3b371244d0ed3d5b37dc505d23b2946e0be",
+        "name": "Ali",
+        "age": "20",
+        "address": "chak no 577",
+        "diseases": [],
+        "visits": [],
+        "role": "patient"
+    },
+    {
+        "id": "2c00938e-4589-4938-8dad-514dd3b5e471",
+        "username": "ali",
+        "password_hash": "pbkdf2:sha256:600000$FYXS3qertDbjtr92$13f97654cc749be1e1f008d6a1fe009ac39cae1d0fe527b50dae8c6e4656ee38",
+        "name": "Ali",
+        "age": "20",
+        "address": "chak",
+        "diseases": [],
+        "visits": [],
+        "role": "patient"
+    },
+    {
+        "id": "cfb071e6-efd1-4568-b14d-cdfdf5cb3e29",
+        "username": "Arshad",
+        "password_hash": "scrypt:32768:8:1$5d9kePM4naZGkqOp$0335513f49b94fe15809240d82df53e1842e99c2b33d7b44c01c193eab391fc13c3d28a9474c062f79eca7a07b0419a7e93c085d05c0e57ce20b62312b954ea1",
+        "name": "Arshad",
+        "age": "12",
+        "address": "Bwp",
+        "diseases": [],
+        "visits": [],
+        "role": "patient"
+    }
+]

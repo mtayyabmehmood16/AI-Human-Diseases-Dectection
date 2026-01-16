@@ -1,0 +1,53 @@
+AI-based Human Disease Detection - Enhanced Block Diagram
+
+                                       +-----------------------+
+                                       |   External AI Service |
+                                       |  (Google Gemini API)  |
+                                       +-----------^-----------+
+                                                   |
+                                                   | HTTPS / JSON
+                                                   |
++-------------------+      +-----------------------v-----------------------+
+|                   |      |                  Flask Application            |
+|     User Input    |      |                                               |
+|  (Browser/Mic)    | ---> |  +-----------+  +-----------+  +-----------+  |
+|                   |      |  |  Auth BP  |  |Patient BP |  |  Main BP  |  |
++-------------------+      |  +-----------+  +-----------+  +-----------+  |
+                           |  +-----------+  +-----------+  +-----------+  |
++-------------------+      |  | Admin BP  |  | Reports   |  | AI Client |  |
+|                   |      |  +-----------+  +-----------+  +-----------+  |
+|   Web Interface   | <--> |                                               |
+| (HTML/JS/Jinja2)  |      |         +---------------------------+         |
+|                   |      |         |      Business Logic       |         |
++-------------------+      |         | (Matcher, Risk, Analysis) |         |
+                           |         +---------------------------+         |
+                           +------------------------^----------------------+
+                                                    |
+                                                    |
+          +-----------------------------------------+-----------------------------------------+
+          |                                         |                                         |
+          v                                         v                                         v
++-------------------+                     +-------------------+                     +-------------------+
+|   SQL Database    |                     |  Knowledge Base   |                     |   File Storage    |
+| (SQLite/Postgres) |                     |    (CSV Files)    |                     |   (Filesystem)    |
+| - Users           |                     | - Diseases        |                     | - Patient Photos  |
+| - Patients        |                     | - Synonyms        |                     | - Report PDFs     |
+| - Medical Records |                     | - Interactions    |                     | - Temp Audio      |
++-------------------+                     +-------------------+                     +-------------------+
+
+Key Components:
+- Web Interface: Bootstrap 5, Jinja2 templates, JavaScript for AJAX/Voice.
+- Flask Blueprints:
+    - Auth: Login, Registration, Session Management.
+    - Patients: CRM for patient data, Search, CSV Export.
+    - Main: AI Chat, Disease Matching, Skin Analysis, Home.
+    - Admin: Dashboard, User Management, Analytics.
+- AI Client: Wrapper for Google Gemini Generative Model (Text & Vision).
+- Business Logic:
+    - DiseaseMatcher: TF-IDF & Cosine Similarity engine (Offline).
+    - RiskAnalyzer: Rule-based health risk calculator.
+    - Reports: PDF generation using ReportLab.
+- Data Layer:
+    - SQL: Structured relational data (Users, Patients, Visits, etc).
+    - CSV: Static medical knowledge data.
+    - Filesystem: Binary assets (Images, Audio).

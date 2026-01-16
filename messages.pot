@@ -1,0 +1,83 @@
+# Translations template for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-12-15 22:49+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: app.py:66
+msgid "Please log in to access this page."
+msgstr ""
+
+#: templates/base.html:19
+msgid "Disease Symptom Matcher"
+msgstr ""
+
+#: templates/base.html:23
+msgid "Home"
+msgstr ""
+
+#: templates/base.html:25
+msgid "Status"
+msgstr ""
+
+#: templates/base.html:27
+msgid "Heart Monitor"
+msgstr ""
+
+#: templates/base.html:29
+msgid "Skin Assistant"
+msgstr ""
+
+#: templates/base.html:53
+msgid "Profile"
+msgstr ""
+
+#: templates/base.html:55
+msgid "AI Chat"
+msgstr ""
+
+#: templates/base.html:57
+msgid "Logout"
+msgstr ""
+
+#: templates/base.html:60
+msgid "Login"
+msgstr ""
+
+#: templates/base.html:62
+msgid "Register"
+msgstr ""
+
+#: templates/dashboard.html:6
+msgid "Admin Dashboard"
+msgstr ""
+
+#: templates/dashboard.html:7
+msgid "System Active"
+msgstr ""
+
+#: templates/dashboard.html:15
+msgid "Total Patients"
+msgstr ""
+
+#: templates/dashboard.html:23
+msgid "Total Users"
+msgstr ""
+
+#: templates/dashboard.html:31
+msgid "Recent Activity"
+msgstr ""
+
